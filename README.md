@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # boke
 
 #### 介绍
@@ -36,7 +35,6 @@
 4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
 5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
 6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
-=======
 # simple-blog
 
 #### 介绍
@@ -50,4 +48,3 @@
 之后再输入 npm run server 该项目将会在你本地开启一个服务器，并运行在 8080 端口。
 
 在浏览器输入 localhost:8080 即可查看效果。
->>>>>>> first

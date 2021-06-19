@@ -7,6 +7,7 @@ module.exports = {
   title: "TangCuYu",
   description: "糖醋鱼小屋",
   dest: "dist",
+  base:"/boke/",
   head: [
     ["link", { rel: "icon", href: "/images/favicon.svg" }],
   ],
