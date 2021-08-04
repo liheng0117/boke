@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Koa2学习笔记 | TangCuYu</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/boke/images/favicon.svg">
+    <meta name="description" content="糖醋鱼小屋">
+    
+    <link rel="preload" href="/boke/assets/css/0.styles.af9084c3.css" as="style"><link rel="preload" href="/boke/assets/js/app.5fe2e981.js" as="script"><link rel="preload" href="/boke/assets/js/3.36b99c6d.js" as="script"><link rel="preload" href="/boke/assets/js/1.513908fb.js" as="script"><link rel="preload" href="/boke/assets/js/12.1b414cd0.js" as="script"><link rel="prefetch" href="/boke/assets/js/10.0be7be33.js"><link rel="prefetch" href="/boke/assets/js/11.f6127484.js"><link rel="prefetch" href="/boke/assets/js/13.56d17f18.js"><link rel="prefetch" href="/boke/assets/js/14.ec9345d2.js"><link rel="prefetch" href="/boke/assets/js/15.5aa673ea.js"><link rel="prefetch" href="/boke/assets/js/16.41d09f08.js"><link rel="prefetch" href="/boke/assets/js/17.2c74426d.js"><link rel="prefetch" href="/boke/assets/js/18.ee16ff5a.js"><link rel="prefetch" href="/boke/assets/js/19.83505301.js"><link rel="prefetch" href="/boke/assets/js/20.cc390c80.js"><link rel="prefetch" href="/boke/assets/js/21.4eda73f8.js"><link rel="prefetch" href="/boke/assets/js/22.e197fd26.js"><link rel="prefetch" href="/boke/assets/js/23.c7945f14.js"><link rel="prefetch" href="/boke/assets/js/24.98762381.js"><link rel="prefetch" href="/boke/assets/js/4.462cc581.js"><link rel="prefetch" href="/boke/assets/js/5.79702b34.js"><link rel="prefetch" href="/boke/assets/js/6.b3dd6d18.js"><link rel="prefetch" href="/boke/assets/js/7.aa256593.js"><link rel="prefetch" href="/boke/assets/js/8.02431d99.js"><link rel="prefetch" href="/boke/assets/js/9.ff85b874.js">
+    <link rel="stylesheet" href="/boke/assets/css/0.styles.af9084c3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>TangCuYu</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>糖醋鱼小屋</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>TangCuYu</span>
+            
+          <span data-v-4e82dffc>2020 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/boke/" class="home-link router-link-active"><img src="/boke/images/favicon.svg" alt="TangCuYu" class="logo"> <span class="site-name">TangCuYu</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/boke/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/boke/categories/Css/" class="nav-link"><i class="undefined"></i>
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Flutter/" class="nav-link"><i class="undefined"></i>
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Koa2/" class="nav-link"><i class="undefined"></i>
+  Koa2
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Python/" class="nav-link"><i class="undefined"></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/React/" class="nav-link"><i class="undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/TypeScript/" class="nav-link"><i class="undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/NLP/" class="nav-link"><i class="undefined"></i>
+  NLP
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Shell/" class="nav-link"><i class="undefined"></i>
+  Shell
+</a></li></ul></div></div><div class="nav-item"><a href="/boke/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      工具箱
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ps.gaoding.com/#/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  在线PS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://uigradients.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  渐变色
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://tinypng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  图片压缩
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://unbug.github.io/codelf/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  变量命名
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.remove.bg/zh" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  消除图片背景
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://cli.im/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  生成二维码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/p/173b4f93b042" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Es6基础语法
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/p/8034d28b0210" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  数据结构 V：1.3.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/boke/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/boke/views/others/message.html" class="nav-link"><i class="iconfont reco-message"></i>
+  留言板
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/boke/views/About/author.html" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/50ce9c5b2638" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/liheng0117" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/li_heng_0117" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mayun"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/boke/images/tx.JPG" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    TangCuYu
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>12</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>13</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/boke/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/boke/categories/Css/" class="nav-link"><i class="undefined"></i>
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Flutter/" class="nav-link"><i class="undefined"></i>
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Koa2/" class="nav-link"><i class="undefined"></i>
+  Koa2
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Python/" class="nav-link"><i class="undefined"></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/React/" class="nav-link"><i class="undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/TypeScript/" class="nav-link"><i class="undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/NLP/" class="nav-link"><i class="undefined"></i>
+  NLP
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Shell/" class="nav-link"><i class="undefined"></i>
+  Shell
+</a></li></ul></div></div><div class="nav-item"><a href="/boke/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      工具箱
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ps.gaoding.com/#/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  在线PS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://uigradients.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  渐变色
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://tinypng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  图片压缩
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://unbug.github.io/codelf/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  变量命名
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.remove.bg/zh" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  消除图片背景
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://cli.im/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  生成二维码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/p/173b4f93b042" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Es6基础语法
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/p/8034d28b0210" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  数据结构 V：1.3.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/boke/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/boke/views/others/message.html" class="nav-link"><i class="iconfont reco-message"></i>
+  留言板
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/boke/views/About/author.html" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/50ce9c5b2638" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/liheng0117" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/li_heng_0117" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mayun"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>Koa2学习笔记</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>TangCuYu</span>
+            
+          <span data-v-4e82dffc>2020 - </span>
+          2021
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">Koa2学习笔记</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>TangCuYu</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>7/27/2021</span></i> <i class="iconfont reco-eye" data-v-1ff7123e><span id="/boke/views/Koa2/koa.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-1ff7123e><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>Koa2</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h2> <div class="custom-block tip"><p class="title"></p><p>Koa 是一个新的 web 框架，由 Express 幕后的原班人马打造， 致力于成为 web 应用和 API 开发领域中的一个更小、更富有表现力、更健壮的基石。 通过利用 async 函数，Koa 帮你丢弃回调函数，并有力地增强错误处理。 Koa 并没有捆绑任何中间件， 而是提供了一套优雅的方法，帮助您快速而愉快地编写服务端应用程序。</p></div><h2 id="一、koa2安装"><a href="#一、koa2安装" class="header-anchor">#</a> 一、Koa2安装</h2> <p>创建一个空白目录，然后进入终端，并在终端对koa进行安装：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 项目初始化
+npm init -y
+
+# 安装koa2
+npm i koa2 -S
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="二、入口文件"><a href="#二、入口文件" class="header-anchor">#</a> 二、入口文件</h2> <p>在项目根目录创建 app.js 文件，并在上一步操作中生成的 package.json 里配置：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,
+    &quot;start&quot;: &quot;node app.js&quot;
+  },
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>在 app.js 中：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const Koa = require('koa2');
+const app = new Koa();
+const port = 9000;
+
+/* 
+  解释下面这段代码：
+  app.use()方法是：将给定的中间件方法添加到此应用程序。简单说就是调用中间件
+  app.use() 返回 this, 因此可以链式表达
+*/
+app.use(async (ctx)=&gt;{
+    ctx.body = &quot;Hello, Koa&quot;;
+    // ctx.body是ctx.response.body的简写
+})
+
+app.listen(port, ()=&gt;{
+    console.log('Server is running at http://localhost:'+port);
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>然后运行 npm start ，并在浏览器输入 http://localhost:9000/ 即可看到页面效果。</p> <h2 id="三、洋葱模型"><a href="#三、洋葱模型" class="header-anchor">#</a> 三、洋葱模型</h2> <p>学Koa必须要了解 洋葱模型 :</p> <p><img src="/boke/assets/img/1.39f2bb1e.jpg" alt=""></p> <p>Koa 和 Express 都会使用到中间件，Express的中间件是顺序执行，从第一个中间件执行到最后一个中间件，发出响应：</p> <p><img src="/boke/assets/img/2.3ba60378.jpg" alt=""></p> <p>Koa是从第一个中间件开始执行，遇到 next 进入下一个中间件，一直执行到最后一个中间件，在逆序，执行上一个中间件 next 之后的代码，一直到第一个中间件执行结束才发出响应。</p> <p><img src="/boke/assets/img/3.048ab7a8.jpg" alt=""></p> <p>对于这个洋葱模型，我们用代码来解释一下。假如把上面的代码改写成：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const Koa = require('koa2');
+const app = new Koa();
+const port = 9000;
+
+app.use(async (ctx, next)=&gt;{
+    console.log(1)
+    await next();
+    console.log(1)
+})
+
+app.use(async (ctx, next)=&gt;{
+    console.log(2)
+    await next();
+    console.log(2)
+})
+
+app.use(async (ctx)=&gt;{
+    console.log(3)
+})
+
+app.listen(port, ()=&gt;{
+    console.log('Server is running at http://localhost:'+port);
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>那么在浏览器刷新后，控制台得到的顺序是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>1
+2
+3
+2
+1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>现在可以看到，我们通过 next可以先运行下个中间件，等中间件结束后，再继续运行当前 next() 之后的代码。</p> <h2 id="四、路由安装"><a href="#四、路由安装" class="header-anchor">#</a> 四、路由安装</h2> <p>当需要匹配不同路由时，可以安装</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm i koa-router
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>将 app.js 修改：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const Koa = require('koa2');
+const Router = require('koa-router');
+const app = new Koa();
+const router = new Router();
+const port = 9000;
+
+router.get('/', async (ctx)=&gt;{
+    ctx.body = &quot;首页&quot;;
+})
+
+router.get('/list', async (ctx)=&gt;{
+    ctx.body = &quot;列表页&quot;;
+})
+
+
+app.use(router.routes(), router.allowedMethods());
+
+app.listen(port, ()=&gt;{
+    console.log('Server is running at http://localhost:'+port);
+})
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>此时，到浏览器刷新并在地址栏最后添加 /list 即可得到首页和列表页。</p> <p>备注：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 调用router.routes()来组装匹配好的路由，返回一个合并好的中间件
+// 调用router.allowedMethods()获得一个中间件，当发送了不符合的请求时，会返回 `405 Method Not Allowed` 或 `501 Not Implemented`
+
+allowedMethods方法可以做以下配置：
+app.use(router.allowedMethods({ 
+    // throw: true, // 抛出错误，代替设置响应头状态
+    // notImplemented: () =&gt; '不支持当前请求所需要的功能',
+    // methodNotAllowed: () =&gt; '不支持的请求方式'
+}))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="五、路由拆分"><a href="#五、路由拆分" class="header-anchor">#</a> 五、路由拆分</h2> <p>有时候我们需要拆分路由，比如：
+列表页下所有的子路由（即前端请求的api）与首页所有的子路由想分开处理，那么就需要拆分路由。</p> <h3 id="_1、创建-router-文件夹"><a href="#_1、创建-router-文件夹" class="header-anchor">#</a> 1、创建 router 文件夹</h3> <p>创建router文件夹，并在其中创建：index.js （路由总入口文件）、home.js （首页总路由文件）、list.js （列表页总路由文件）：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># app.js
+const router = require('./router/index')
+app.use(router.routes(), router.allowedMethods());
+
+# index.js
+const Router = require('koa-router');
+const router = new Router();
+const home = require('./home')
+const list = require('./list')
+
+router.use('/home', home.routes(), home.allowedMethods());
+router.use('/list', list.routes(), list.allowedMethods());
+
+module.exports = router;
+
+
+# home.js
+const Router = require('koa-router');
+const home = new Router();
+
+// 这里的 '/' 就是指向 index.js 中的 /home
+home.get('/', async (ctx) =&gt; {
+        ctx.body = &quot;首页&quot;;
+    })
+
+module.exports = home;
+
+
+# list.js
+const Router = require('koa-router');
+const list = new Router();
+
+list.get('/', async (ctx)=&gt;{
+    ctx.body = &quot;列表页&quot;;
+})
+
+module.exports = list;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><p>到浏览器刷新 localhost:9000/home 与 localhost:9000/list 即可得到首页与列表页。</p> <h3 id="_2、路由重定向"><a href="#_2、路由重定向" class="header-anchor">#</a> 2、路由重定向</h3> <p>如果想直接从 localhost:9000 重定向到 localhost:9000/home<br>
+可以在 router/index.js 中做如下配置：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>router.use('/home', home.routes(), home.allowedMethods());
+...
+router.redirect('/', '/home');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_3、404无效路由"><a href="#_3、404无效路由" class="header-anchor">#</a> 3、404无效路由</h3> <p>如果被访问到无效路由，可以统一返回404页面：</p> <p>在 router 下 errorPage.js :</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const Router = require('koa-router');
+const errorPage = new Router();
+
+errorPage.get('/', async (ctx) =&gt; {
+    ctx.body = &quot;访问页面不存在&quot;;
+})
+
+module.exports = errorPage;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>在 app.js 中引用：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 匹配不到页面的全部跳转去404
+app.use(async (ctx, next) =&gt; {
+    await next();
+    if (parseInt(ctx.status) === 404) {
+        ctx.response.redirect(&quot;/404&quot;)
+    }
+})
+app.use(router.routes(), router.allowedMethods());
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="六、统一异常处理"><a href="#六、统一异常处理" class="header-anchor">#</a> 六、统一异常处理</h2> <p>避免每次都要自己手写404或200进行返回，因此我们可以创建 utils/errorHandler.js ：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 统一异常处理
+module.exports = (app) =&gt; {
+    app.use(async (ctx, next) =&gt; {
+        let status = 0;
+        let fileName = &quot;&quot;;
+        try{
+            await next();
+            status = ctx.status;
+        }catch(err){
+            //console.log(err);
+            status = 500;
+        }
+        if(status &gt;= 400){
+            switch(status){
+                case 400:
+                case 404:
+                case 500:
+                    fileName = status;
+                    break;
+                default:
+                    fileName = &quot;other&quot;;
+                    break;
+            }
+        }
+        ctx.response.status = status;
+        console.log(fileName);
+    });
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p>然后在 app.js 中引入：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const errorHandler = require('./utils/errorHandler.js');
+
+app.use(router.routes(), router.allowedMethods());
+...
+errorHandler(app);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="七、操作mysql函数封装"><a href="#七、操作mysql函数封装" class="header-anchor">#</a> 七、操作mysql函数封装</h2> <p>首先，项目内安装 mysql：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn add mysql
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在 utils 目录下创建一个 db.js 文件：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var mysql = require('mysql')
+
+var pool = mysql.createPool({
+    host: 'localhost', // 连接的服务器(代码托管到线上后，需改为内网IP，而非外网)
+    port: 3306, // mysql服务运行的端口
+    database: 'xxx', // 选择的库
+    user: 'root', // 用户名
+    password: '123456' // 用户密码   
+})
+
+//对数据库进行增删改查操作的基础
+function query(sql,callback){
+    pool.getConnection(function(err,connection){
+        connection.query(sql, function (err,rows) {
+            callback(err,rows)
+            connection.release()
+        })
+    })
+}
+
+exports.query = query;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>调用方式：</p> <p>假设要访问首页('/home')时，要查询表users中所有的数据，可以如下操作：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const db = require('../utils/db.js');
+
+home
+  // 页面底部外链
+  .get('/', async (ctx) =&gt; {
+    let data = await new Promise((resolve, reject)=&gt;{
+      let sqlLang = `select * from users`;
+      db.query(sqlLang, (err, data)=&gt;{
+        if(err) reject(err);
+        resolve(data);	// 返回拿到的数据
+      })
+    })
+    ctx.body = data;
+  })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="八、后端允许跨域"><a href="#八、后端允许跨域" class="header-anchor">#</a> 八、后端允许跨域</h2> <p>前端想跨域，可以设置proxy。如果后端允许跨域，可以如下操作：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 安装koa2-cors
+cnpm i koa2-cors
+
+// 这里cors中间件一定要写在路由之前
+app.use(cors());
+app.use(router.routes(), router.allowedMethods())
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="九、读取静态资源文件"><a href="#九、读取静态资源文件" class="header-anchor">#</a> 九、读取静态资源文件</h2> <p>首先，在项目的根目录下创建 assets 后，将图片资源文件夹 images 放到其中，并且执行以下操作：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 安装koa-static
+cnpm install koa-static
+
+// 引入
+const path = require('path')
+const static = require('koa-static')
+
+// 获取静态资源文件夹
+app.use(static(path.join(__dirname+'/assets')));
+...
+app.use(router.routes(), router.allowedMethods())
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>假设其中有一张图片叫做 banner1.png，那么我们打开浏览器，访问：http://localhost:5050/images/banner1.png 即可得到图片。这里注意：</p> <p>路径上不需要写assets，因为我们已经指定了访问资源时， http://localhost:5050 自动指向 assets 文件夹。</p> <p>由此，我们知道数据库中图片的地址只需要填写 /images/banner1.png 即可。</p> <h2 id="十、post请求"><a href="#十、post请求" class="header-anchor">#</a> 十、POST请求</h2> <h3 id="_1、建表"><a href="#_1、建表" class="header-anchor">#</a> 1、建表</h3> <p>设定字段为account和pwd</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>create table users (
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	account VARCHAR(20) NOT NULL COMMENT '账号',
+	pwd VARCHAR(20) NOT NULL COMMENT '密码',
+  token LONGTEXT NOT NULL COMMENT '令牌'
+);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="_2、form表单页面"><a href="#_2、form表单页面" class="header-anchor">#</a> 2、form表单页面</h2> <p>在 assets 下创建 index.html ：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;label for=&quot;account&quot;&gt;账号&lt;/label&gt;
+    &lt;input type=&quot;text&quot; value=&quot;&quot; name=&quot;account&quot; class=&quot;account&quot; placeholder=&quot;请输入账号&quot; /&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;label for=&quot;pwd&quot;&gt;密码&lt;/label&gt;
+    &lt;input type=&quot;password&quot; value=&quot;&quot; name=&quot;pwd&quot; class=&quot;pwd&quot; placeholder=&quot;请输入密码&quot; /&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;button class=&quot;btn&quot;&gt;登录/注册&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;script src=&quot;https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    $('.btn').click(()=&gt;{
+        $.ajax({
+            url: &quot;/login/register&quot;,
+            method: &quot;POST&quot;,
+            data: {
+                account: $('.account').val(),
+                pwd: $('.pwd').val()
+            },
+            success(res){
+                console.log(res)
+            },
+            error(err){
+                console.log(err)
+            }
+        })
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><p>在浏览器直接访问 http://localhost:5050/index.html 即可进入表单页。</p> <h2 id="_3、安装中间件"><a href="#_3、安装中间件" class="header-anchor">#</a> 3、安装中间件</h2> <p>安装 koa-bodyparser 与 jsonwebtoken 中间件:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// koa-bodyparser用于获取post请求数据
+cnpm install koa-bodyparser --save
+
+// jsonwebtoken用于生成token
+cnpm install jsonwebtoken --save
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h5 id="jwt"><a href="#jwt" class="header-anchor">#</a> JWT</h5> <p>在用户登录的路由中使用 jwt.sign 来生成token，一共定义三个参数，第一个是存入token的信息，第二个是token的钥匙，和config/passport.js的配置的钥匙相同，第三个是保存的时间，3600即一个小时，最后返回token，要在前面加Bearer:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const jwt = require('jsonwebtoken')
+
+const token = jwt.sign({ myaccount: myaccount, mypwd: mypwd }, 'secret', { expiresIn: 3600 })
+let obj = {
+  token,
+  msg: '登录成功'
+}
+resolve(obj)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_4、添加post接口"><a href="#_4、添加post接口" class="header-anchor">#</a> 4、添加post接口</h3> <p>在 router/login.js 中加入：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const bodyParser = require('koa-bodyparser')
+
+login.use(bodyParser());
+
+login.post('/register', async (ctx)=&gt;{
+  console.log(ctx.request.body);		// 可以打印得到数据
+	ctx.response.body = &quot;登录或注册&quot;
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_5、登录与自动注册"><a href="#_5、登录与自动注册" class="header-anchor">#</a> 5、登录与自动注册</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>const Router = require('koa-router')
+const login = new Router()
+const bodyParser = require('koa-bodyparser')
+const db = require('../utils/db')
+const jwt = require('jsonwebtoken')
+
+login.get('/', async (ctx) =&gt; {
+	ctx.response.body = &quot;登录页面&quot;
+})
+
+login.use(bodyParser());
+
+login.post('/register', async (ctx) =&gt; {
+	let myaccount = ctx.request.body.account;
+	let mypwd = ctx.request.body.pwd;
+	let sql = `SELECT * FROM users WHERE account='${myaccount}'`;
+	let result = await new Promise((resolve, reject) =&gt; {
+		return db.query(sql, (err, data) =&gt; {
+			if (err) throw err;
+			if (data.length &gt; 0) {
+				resolve(data);
+			} else {
+				resolve(false);
+			}
+		})
+	})
+	if (result) {
+		// 能找到对应的账号
+		if (result[0].pwd == mypwd) {
+			// 账号密码正确，返回token
+			ctx.body = {
+				token: result[0],
+				msg: '登录成功',
+				account: myaccount
+			};
+		} else {
+			// 密码错误
+			ctx.body = {
+				msg: '密码错误',
+				account: myaccount
+			};
+		}
+	} else {
+		// 找不到对应的账号，直接插入一个
+		let result1 = await new Promise((resolve, reject) =&gt; {
+			// 生成token
+			const token = jwt.sign({ myaccount: myaccount, mypwd: mypwd }, 'secret', { expiresIn: 3600 })
+			return db.query(`INSERT INTO users (account, pwd, token) values ('${myaccount}', '${mypwd}', '${token}')`, (error, datas) =&gt; {
+				if (error) throw error;
+				// 已插入数据，返回用户名与token
+				let obj = {
+					token,
+					msg: '登录成功',
+					account: myaccount
+				}
+				resolve(obj)
+			})
+		})
+		if (result1) {
+			ctx.body = result1;
+		}
+	}
+})
+
+module.exports = login;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br></div></div><p>此时，前端做这个post请求后，就会得到相应的数据。</p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/boke/views/Koa2/koa.html#介绍" class="sidebar-link reco-side-介绍" data-v-70334359>介绍</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Koa2/koa.html#一、koa2安装" class="sidebar-link reco-side-一、koa2安装" data-v-70334359>一、Koa2安装</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Koa2/koa.html#二、入口文件" class="sidebar-link reco-side-二、入口文件" data-v-70334359>二、入口文件</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Koa2/koa.html#三、洋葱模型" class="sidebar-link reco-side-三、洋葱模型" data-v-70334359>三、洋葱模型</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Koa2/koa.html#四、路由安装" class="sidebar-link reco-side-四、路由安装" data-v-70334359>四、路由安装</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Koa2/koa.html#五、路由拆分" class="sidebar-link reco-side-五、路由拆分" data-v-70334359>五、路由拆分</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Koa2/koa.html#_1、创建-router-文件夹" class="sidebar-link reco-side-_1、创建-router-文件夹" data-v-70334359>1、创建 router 文件夹</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Koa2/koa.html#_2、路由重定向" class="sidebar-link reco-side-_2、路由重定向" data-v-70334359>2、路由重定向</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Koa2/koa.html#_3、404无效路由" class="sidebar-link reco-side-_3、404无效路由" data-v-70334359>3、404无效路由</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Koa2/koa.html#六、统一异常处理" class="sidebar-link reco-side-六、统一异常处理" data-v-70334359>六、统一异常处理</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Koa2/koa.html#七、操作mysql函数封装" class="sidebar-link reco-side-七、操作mysql函数封装" data-v-70334359>七、操作mysql函数封装</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Koa2/koa.html#八、后端允许跨域" class="sidebar-link reco-side-八、后端允许跨域" data-v-70334359>八、后端允许跨域</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Koa2/koa.html#九、读取静态资源文件" class="sidebar-link reco-side-九、读取静态资源文件" data-v-70334359>九、读取静态资源文件</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Koa2/koa.html#十、post请求" class="sidebar-link reco-side-十、post请求" data-v-70334359>十、POST请求</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Koa2/koa.html#_1、建表" class="sidebar-link reco-side-_1、建表" data-v-70334359>1、建表</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Koa2/koa.html#_2、form表单页面" class="sidebar-link reco-side-_2、form表单页面" data-v-70334359>2、form表单页面</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Koa2/koa.html#_3、安装中间件" class="sidebar-link reco-side-_3、安装中间件" data-v-70334359>3、安装中间件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Koa2/koa.html#_4、添加post接口" class="sidebar-link reco-side-_4、添加post接口" data-v-70334359>4、添加post接口</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Koa2/koa.html#_5、登录与自动注册" class="sidebar-link reco-side-_5、登录与自动注册" data-v-70334359>5、登录与自动注册</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="reco-bgm-panel" data-v-39f9e6e0><audio id="bgm" src="/boke/mp3/1.mp3" data-v-39f9e6e0></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><img src="/boke/images/avatar.png" data-v-39f9e6e0></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><div class="reco-bgm-cover" style="background-image:url(/boke/images/avatar.png);" data-v-39f9e6e0><div class="mini-operation" style="display:none;" data-v-39f9e6e0><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-39f9e6e0></i></div> <div class="falut-message" style="display:none;" data-v-39f9e6e0>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><div class="info-box" data-v-39f9e6e0><i class="reco-bgm reco-bgm-music music" data-v-39f9e6e0></i>哪里都是你</div> <div class="info-box" data-v-39f9e6e0><i class="reco-bgm reco-bgm-artist" data-v-39f9e6e0></i>队长</div> <div class="reco-bgm-progress" data-v-39f9e6e0><div class="progress-bar" data-v-39f9e6e0><div class="bar" data-v-39f9e6e0></div></div></div> <div class="reco-bgm-operation" data-v-39f9e6e0><i class="reco-bgm reco-bgm-last last" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-play play" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-next next" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-39f9e6e0></i> <div class="volume-bar" data-v-39f9e6e0><div class="bar" data-v-39f9e6e0></div></div></div></div> <div class="reco-bgm-left-box" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><i class="reco-bgm reco-bgm-left" data-v-39f9e6e0></i></div></div></div></div></div>
+    <script src="/boke/assets/js/app.5fe2e981.js" defer></script><script src="/boke/assets/js/3.36b99c6d.js" defer></script><script src="/boke/assets/js/1.513908fb.js" defer></script><script src="/boke/assets/js/12.1b414cd0.js" defer></script>
+  </body>
+</html>

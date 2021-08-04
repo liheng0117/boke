@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Flutter学习笔记 | TangCuYu</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/boke/images/favicon.svg">
+    <meta name="description" content="糖醋鱼小屋">
+    
+    <link rel="preload" href="/boke/assets/css/0.styles.af9084c3.css" as="style"><link rel="preload" href="/boke/assets/js/app.5fe2e981.js" as="script"><link rel="preload" href="/boke/assets/js/3.36b99c6d.js" as="script"><link rel="preload" href="/boke/assets/js/1.513908fb.js" as="script"><link rel="preload" href="/boke/assets/js/20.cc390c80.js" as="script"><link rel="prefetch" href="/boke/assets/js/10.0be7be33.js"><link rel="prefetch" href="/boke/assets/js/11.f6127484.js"><link rel="prefetch" href="/boke/assets/js/12.1b414cd0.js"><link rel="prefetch" href="/boke/assets/js/13.56d17f18.js"><link rel="prefetch" href="/boke/assets/js/14.ec9345d2.js"><link rel="prefetch" href="/boke/assets/js/15.5aa673ea.js"><link rel="prefetch" href="/boke/assets/js/16.41d09f08.js"><link rel="prefetch" href="/boke/assets/js/17.2c74426d.js"><link rel="prefetch" href="/boke/assets/js/18.ee16ff5a.js"><link rel="prefetch" href="/boke/assets/js/19.83505301.js"><link rel="prefetch" href="/boke/assets/js/21.4eda73f8.js"><link rel="prefetch" href="/boke/assets/js/22.e197fd26.js"><link rel="prefetch" href="/boke/assets/js/23.c7945f14.js"><link rel="prefetch" href="/boke/assets/js/24.98762381.js"><link rel="prefetch" href="/boke/assets/js/4.462cc581.js"><link rel="prefetch" href="/boke/assets/js/5.79702b34.js"><link rel="prefetch" href="/boke/assets/js/6.b3dd6d18.js"><link rel="prefetch" href="/boke/assets/js/7.aa256593.js"><link rel="prefetch" href="/boke/assets/js/8.02431d99.js"><link rel="prefetch" href="/boke/assets/js/9.ff85b874.js">
+    <link rel="stylesheet" href="/boke/assets/css/0.styles.af9084c3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>TangCuYu</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>糖醋鱼小屋</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>TangCuYu</span>
+            
+          <span data-v-4e82dffc>2020 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/boke/" class="home-link router-link-active"><img src="/boke/images/favicon.svg" alt="TangCuYu" class="logo"> <span class="site-name">TangCuYu</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/boke/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/boke/categories/Css/" class="nav-link"><i class="undefined"></i>
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Flutter/" class="nav-link"><i class="undefined"></i>
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Koa2/" class="nav-link"><i class="undefined"></i>
+  Koa2
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Python/" class="nav-link"><i class="undefined"></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/React/" class="nav-link"><i class="undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/TypeScript/" class="nav-link"><i class="undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/NLP/" class="nav-link"><i class="undefined"></i>
+  NLP
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Shell/" class="nav-link"><i class="undefined"></i>
+  Shell
+</a></li></ul></div></div><div class="nav-item"><a href="/boke/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      工具箱
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ps.gaoding.com/#/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  在线PS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://uigradients.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  渐变色
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://tinypng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  图片压缩
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://unbug.github.io/codelf/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  变量命名
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.remove.bg/zh" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  消除图片背景
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://cli.im/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  生成二维码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/p/173b4f93b042" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Es6基础语法
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/p/8034d28b0210" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  数据结构 V：1.3.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/boke/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/boke/views/others/message.html" class="nav-link"><i class="iconfont reco-message"></i>
+  留言板
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/boke/views/About/author.html" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/50ce9c5b2638" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/liheng0117" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/li_heng_0117" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mayun"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/boke/images/tx.JPG" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    TangCuYu
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>12</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>13</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/boke/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/boke/categories/Css/" class="nav-link"><i class="undefined"></i>
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Flutter/" class="nav-link"><i class="undefined"></i>
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Koa2/" class="nav-link"><i class="undefined"></i>
+  Koa2
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Python/" class="nav-link"><i class="undefined"></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/React/" class="nav-link"><i class="undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/TypeScript/" class="nav-link"><i class="undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/NLP/" class="nav-link"><i class="undefined"></i>
+  NLP
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Shell/" class="nav-link"><i class="undefined"></i>
+  Shell
+</a></li></ul></div></div><div class="nav-item"><a href="/boke/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      工具箱
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ps.gaoding.com/#/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  在线PS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://uigradients.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  渐变色
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://tinypng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  图片压缩
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://unbug.github.io/codelf/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  变量命名
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.remove.bg/zh" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  消除图片背景
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://cli.im/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  生成二维码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/p/173b4f93b042" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Es6基础语法
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/p/8034d28b0210" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  数据结构 V：1.3.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/boke/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/boke/views/others/message.html" class="nav-link"><i class="iconfont reco-message"></i>
+  留言板
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/boke/views/About/author.html" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/50ce9c5b2638" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/liheng0117" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/li_heng_0117" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mayun"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>Flutter学习笔记</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>TangCuYu</span>
+            
+          <span data-v-4e82dffc>2020 - </span>
+          2021
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">Flutter学习笔记</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>TangCuYu</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>6/24/2021</span></i> <i class="iconfont reco-eye" data-v-1ff7123e><span id="/boke/views/Flutter/flutter.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-1ff7123e><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>Flutter</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h2> <div class="custom-block tip"><p class="title"></p><p>Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质量的原生用户界面。 Flutter可以与现有的代码一起工作。在全世界，Flutter正在被越来越多的开发者和组织使用，并且Flutter是完全免费、开源的。</p></div><h4 id="app-开发运行机制"><a href="#app-开发运行机制" class="header-anchor">#</a> app 开发运行机制</h4> <ul><li>原生APP ： java -&gt; 图形渲染引擎 -&gt; GPU -&gt; UI界面</li> <li>React-Native：js -&gt; java -&gt; 图形渲染引擎 -&gt; GPU -&gt; UI界面</li> <li>Flutter：Flutter -&gt; Dart -&gt; 图形渲染引擎 -&gt; GPU -&gt; UI界面</li></ul> <h2 id="一、在macos上搭建flutter开发环境"><a href="#一、在macos上搭建flutter开发环境" class="header-anchor">#</a> 一、在macOS上搭建Flutter开发环境</h2> <p>具体见：<a href="https://flutterchina.club/setup-macos/" target="_blank" rel="noopener noreferrer">Flutter中文网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>通过 flutter create flutter_demo 创建一个flutter项目</li> <li>cd flutter_demo</li> <li>flutter run   运行项目</li></ul> <h2 id="二、常用快捷键"><a href="#二、常用快捷键" class="header-anchor">#</a> 二、常用快捷键</h2> <ul><li>r 键：热加载(快速部署)。</li> <li>p 键：显示网格，用于开发时调试UI。</li> <li>o 键：切换Android和iOS的预览模式。</li> <li>q 键：退出调试预览模式。
+以上几个按键需要已经执行过flutter run之后才可以在终端中使用。</li></ul> <h2 id="三、基本widget组件"><a href="#三、基本widget组件" class="header-anchor">#</a> 三、基本Widget组件</h2> <div class="custom-block tip"><p class="title"></p><p>Flutter中一切皆组件(Widget)。所有的自定义组件、系统组件、自定义页面等其实都是Widget的子类。每个widget的构造函数都有一个key参数，这个参数的作用是什么呢？Key用于在widget的位置改变时保留其状态。比如，保留用户的滑动位置，或者在保留widget状态的情况下修改一个widget集合，如Row、Column等，这一篇博客详细d 讲解了Widget中的key。</p></div><h3 id="_3-1-有状态无状态组件。"><a href="#_3-1-有状态无状态组件。" class="header-anchor">#</a> 3-1 有状态无状态组件。</h3> <p>Flutter中如果要自定组件，一般都继承自有状态组件或无状态组件(小到组件大到页面)，如果一个页面加载出来之后就不会再改变了那么就继承自StatelessWidget，如果加载之后还需要根据数据的变化而变化，那么就需要继承自StatefulWidget。</p> <ol><li>StatelessWidget 无状态组件。</li></ol> <p>​    StatelessWidget组件是一个抽象类，继承该组件必须要实现Widget build(BuildContext context)方法。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return Text(&quot;Hello Flutter!&quot;);
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ol start="2"><li>StatefulWidget 有状态组件。</li></ol> <p>​ StatefulWidget是一个抽象组件，继承该组件必须要实现State&lt; StatefulWidget &gt; createState()方法。该方法需要返回一个State类的实例。而State是一个抽象类，要继承State需要实现Widget build(BuildContext context)抽象方法，并制定泛型为拥有该State的Widget。</p> <p>​ 如果要实现改变状态，需要使用State类中的setState方法。下面的栗子是点击按钮后按钮上面的数字动态加1，具体代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>class TestPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(20),
+      child: Custom(),
+    );
+  }
+}
+
+class Custom extends StatefulWidget{
+  @override
+  State&lt;StatefulWidget&gt; createState() {
+    return _CustomState();
+  }
+}
+
+class _CustomState extends State&lt;Custom&gt;{
+  var myNumber = 0;
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(&quot;$myNumber&quot;),
+        SizedBox(height: 20),
+        RaisedButton(
+          onPressed: () {
+            setState(() {
+              myNumber++;
+            });
+          },
+          child: Text('增加'),
+        )
+      ],
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><h3 id="_3-2-装饰组件"><a href="#_3-2-装饰组件" class="header-anchor">#</a> 3-2 装饰组件</h3> <ol><li>MaterialApp</li></ol> <p>​ MaterialApp是一个方便的Widget，他封装了应用程序实现 Material Design 所需要的一些Widget。一般作为一个页面的最顶层的Widget使用。</p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">home</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">页面的具体内容组件</td></tr> <tr><td style="text-align:center;">title</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;">''</td> <td style="text-align:center;">页面标题。</td></tr> <tr><td style="text-align:center;">color</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">页面颜色。</td></tr> <tr><td style="text-align:center;">theme</td> <td style="text-align:center;">ThemeData</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">页面主题。</td></tr> <tr><td style="text-align:center;">routes</td> <td style="text-align:center;">Map&lt; String, WidgetBuilder&gt;</td> <td style="text-align:center;">是</td> <td style="text-align:center;">const &lt; String, WidgetBuilder&gt;{}</td> <td style="text-align:center;">路由。</td></tr></tbody></table> <ol start="2"><li>Scaffold</li></ol> <p>​ Scaffold 是 Material Design 布局结构的基本实现。此类提供了用于显示 drawer、snackbar 和底部的 sheet 的参数。</p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">appBar</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">导航栏</td></tr> <tr><td style="text-align:center;">body</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">drawer</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">bottomNavigationBar</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;"></td></tr></tbody></table> <ol start="3"><li>InkWell &amp; GestureDetector 手势组件</li></ol> <p>​ 在Flutter中并不是所有的Widget都支持点击事件，但是如果我们想给某些我们自己的Widget设置点击事件时应该怎么办呢(例如我们列表中的item)？这时我们只需要使用InkWell将我们要设置点击事件的Widget包裹起来就可以了。</p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">child</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">子组件</td></tr> <tr><td style="text-align:center;">onTap</td> <td style="text-align:center;">GestureTapCallback</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">单击事件回调</td></tr> <tr><td style="text-align:center;">onDoubleTap</td> <td style="text-align:center;">GestureTapCallback</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">双击事件回调</td></tr> <tr><td style="text-align:center;">onLongPress</td> <td style="text-align:center;">GestureLongPressCallback</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">长按事件回调</td></tr></tbody></table> <p>GestureDetector和InkWell用法基本一致，只是GestureDetector比InkWell多了更多回调设置，可以监听更多的事件。</p> <h3 id="_3-3-container-容器组件"><a href="#_3-3-container-容器组件" class="header-anchor">#</a> 3-3 Container 容器组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">constraints</td> <td style="text-align:center;">BoxConstraints</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">用不约束宽高(最大宽高、最小宽高等)</td></tr> <tr><td style="text-align:center;">alignment</td> <td style="text-align:center;">AlignmentGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">对齐方式</td></tr> <tr><td style="text-align:center;">decoration</td> <td style="text-align:center;">Decoration</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置边框装饰</td></tr> <tr><td style="text-align:center;">padding</td> <td style="text-align:center;">EdgeInsetsGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">内边距</td></tr> <tr><td style="text-align:center;">margin</td> <td style="text-align:center;">EdgeInsetsGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">外边距</td></tr> <tr><td style="text-align:center;">transform</td> <td style="text-align:center;">Matrix4</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">旋转、平移</td></tr></tbody></table> <h3 id="_3-4-text-文本组件"><a href="#_3-4-text-文本组件" class="header-anchor">#</a> 3-4. Text 文本组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">data</td> <td style="text-align:center;">String</td> <td style="text-align:center;">否</td> <td style="text-align:center;">--</td> <td style="text-align:center;">用于设置现在界面上的文字</td></tr> <tr><td style="text-align:center;">textAlign</td> <td style="text-align:center;">TextAlign</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">center:居中 / left:居左 / right：居右 / justfy：两端对齐</td></tr> <tr><td style="text-align:center;">textDirection</td> <td style="text-align:center;">TextDirection</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">文本方向，ltr：从左至右 rtl：从右至左</td></tr> <tr><td style="text-align:center;">overflow</td> <td style="text-align:center;">TextOverflow</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">文字超出屏幕后的处理方式，clip：裁剪 fade：渐隐 ellipsis：省略号</td></tr> <tr><td style="text-align:center;">style</td> <td style="text-align:center;">TextStyle</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">用于设置文字的样式</td></tr> <tr><td style="text-align:center;">maxLines</td> <td style="text-align:center;">int</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">用于设置文字的最大显示行数</td></tr> <tr><td style="text-align:center;">textScaleFactor</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">字体显示倍率</td></tr></tbody></table> <h3 id="_3-5-listview-列表组件"><a href="#_3-5-listview-列表组件" class="header-anchor">#</a> 3-5. ListView 列表组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">itemCount</td> <td style="text-align:center;">Int</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置列表一共有多少个条目</td></tr> <tr><td style="text-align:center;">itemBuilder</td> <td style="text-align:center;">Widget Function(BuildContext context, int index)</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">用于构建item(cell)视图的回调方法。</td></tr> <tr><td style="text-align:center;">scrollDirection</td> <td style="text-align:center;">Axis</td> <td style="text-align:center;">是</td> <td style="text-align:center;">Axis.vertical</td> <td style="text-align:center;">滚动方向：horizontal-横向 vertical纵向。</td></tr> <tr><td style="text-align:center;">reverse</td> <td style="text-align:center;">bool</td> <td style="text-align:center;">是</td> <td style="text-align:center;">false</td> <td style="text-align:center;">是否反向排列。</td></tr> <tr><td style="text-align:center;">keyboard DismissBehavior</td> <td style="text-align:center;">ScrollViewKeyboard DismissBehavior</td> <td style="text-align:center;">是</td> <td style="text-align:center;">ScrollViewKeyboard DismissBehavior.manual</td> <td style="text-align:center;">滚动时键盘的处理方式。</td></tr></tbody></table> <ul><li>静态列表</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>@override
+Widget build(BuildContext context) {
+  return ListView(
+    children: [
+      Text('我是一个条目'),
+      Text('我是一个条目'),
+      Text('我是一个条目'),
+      Text('我是一个条目'),
+      Text('我是一个条目'),
+      Text('我是一个条目'),
+    ],
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ul><li>动态列表</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>@override
+Widget build(BuildContext context) {
+  return ListView.builder(
+      itemCount: 5, 
+      itemBuilder: (context, index){
+        return ListTile(
+          leading: data[index].avatarUrl,
+          title: data[index].name,
+          subtitle: data[index].desc,
+        );
+      }
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ul><li>上拉加载更多</li></ul> <p>上拉加载更多有两种实现方式：</p> <ol><li>可以在itemBuilder回调中处理，判断当前index的数值，当构建最后一个条目时触发加载更多。</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>@override
+Widget build(BuildContext context) {
+  return ListView.builder(
+      itemCount: this._data.length, 
+      itemBuilder: (context, index){
+        if (index == this._data.length) {
+          onLoadMore();  //触发loadMore()
+        }
+        return ListTile(
+          leading: this._data[index].avatarUrl,
+          title: this._data[index].name,
+          subtitle: this._data[index].desc,
+        );
+      }
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><ol start="2"><li>可以利用ListView的controller属性监听列表的滚动。具体有以下几个步骤：</li></ol> <p>(1)、声明一个ScrollController变量</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ScrollController _scrollController = ScrollController();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>(2)、在initState生命周期中设置监听并判断滚动距离。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@override
+void initState() {
+  super.initState();
+  this._scrollController.addListener(() {
+    if(this._scrollController.position.pixels &gt; this._scrollController.position.maxScrollExtent - 50) {
+      onLoadMore();   //当滚动接近底部时触发加载更多。
+    }
+  });
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>(3)、为ListView增加controller属性。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ListView.builder(
+  controller: _scrollController,
+  itemCount: this._data.length, 
+  itemBuilder: (context, index){
+    return ListTile(
+      leading: this._data[index].avatarUrl,
+      title: this._data[index].name,
+      subtitle: this._data[index].desc,
+    );
+  }
+);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>到此上拉加载更多就已经实现了，但是这里还有问题。那就是如果我们已经加载完成了最后一页，我们不断的上拉会不断的请求接口，尽管接口会返回空的数据。所以我们还需要对此做进一步处理。</p> <h3 id="_3-6-refreshindicator下拉刷新组件"><a href="#_3-6-refreshindicator下拉刷新组件" class="header-anchor">#</a> 3-6. RefreshIndicator下拉刷新组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">child</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">用来绘制内容视图，通常应该是ListView。</td></tr> <tr><td style="text-align:center;">onRefresh</td> <td style="text-align:center;">Future&lt; void&gt; Function</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">下拉刷新的监听</td></tr> <tr><td style="text-align:center;">color</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">主题色</td> <td style="text-align:center;">设置颜色</td></tr> <tr><td style="text-align:center;">displacement</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">40.0</td> <td style="text-align:center;">设置下拉多少距离触发下拉刷新</td></tr></tbody></table> <div class="language- line-numbers-mode"><pre class="language-text"><code>RefreshIndicator(
+  child: ListView.builder(
+    itemCount: _dataList.length, 
+    itemBuilder: _createItemCell
+  ),
+  onRefresh: () =&gt; Future.delayed(Duration(), () =&gt; onRefresh()),
+);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="_3-7-gridview"><a href="#_3-7-gridview" class="header-anchor">#</a> 3-7. GridView</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">crossAxisSpacing</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">水平间距</td></tr> <tr><td style="text-align:center;">mainAxisSpacing</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">垂直间距</td></tr> <tr><td style="text-align:center;">scrollDirection</td> <td style="text-align:center;">Axis</td> <td style="text-align:center;">是</td> <td style="text-align:center;">Axis.vertical</td> <td style="text-align:center;">滚动方向：horizontal-横向 vertical纵向。</td></tr> <tr><td style="text-align:center;">reverse</td> <td style="text-align:center;">bool</td> <td style="text-align:center;">是</td> <td style="text-align:center;">false</td> <td style="text-align:center;">是否反向排列。</td></tr> <tr><td style="text-align:center;">childAspecet</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">item的宽高比例。</td></tr> <tr><td style="text-align:center;">crossAxisCount</td> <td style="text-align:center;">int</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置列数</td></tr> <tr><td style="text-align:center;">gridDelegate</td> <td style="text-align:center;">SliverGridDelegate</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">builder专用。用于设置间距列数等。</td></tr> <tr><td style="text-align:center;">itemBuilder</td> <td style="text-align:center;">Widget Function(BuildContext context, int index)</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">builder专用。用于构建item(cell)视图的回调方法。</td></tr></tbody></table> <p>静态列表</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@override
+Widget build(BuildContext context) {
+  return GridView.count(
+      crossAxisCount: 2,
+      children: [
+        Text('我是一个条目'),
+        Text('我是一个条目'),
+        Text('我是一个条目'),
+        Text('我是一个条目'),
+        Text('我是一个条目'),
+        Text('我是一个条目'),
+        Text('我是一个条目'),
+        Text('我是一个条目'),
+        Text('我是一个条目'),
+        Text('我是一个条目')
+      ],
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>动态列表</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@override
+Widget build(BuildContext context) {
+  return GridView.builder(
+      itemCount: 600,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 3
+      ),
+      itemBuilder: (context, position){
+        return Text('我是第$position个条目');
+      }
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="_3-8-padding-内边距组件"><a href="#_3-8-padding-内边距组件" class="header-anchor">#</a> 3-8. Padding 内边距组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">padding</td> <td style="text-align:center;">EdgeInsetsGeometry</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">用于设置内边距，其实是设置child的外边距。</td></tr> <tr><td style="text-align:center;">child</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">子元素。</td></tr></tbody></table> <h3 id="_3-9-row-水平布局组件"><a href="#_3-9-row-水平布局组件" class="header-anchor">#</a> 3-9. Row 水平布局组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">mainAxisAlignment</td> <td style="text-align:center;">MainAxisAlignment</td> <td style="text-align:center;">是</td> <td style="text-align:center;">MainAxisAlignment.start</td> <td style="text-align:center;">主轴的排序方式</td></tr> <tr><td style="text-align:center;">crossAxisAlignment</td> <td style="text-align:center;">CrossAxisAlignment</td> <td style="text-align:center;">是</td> <td style="text-align:center;">CrossAxisAlignment.center</td> <td style="text-align:center;">次轴的排序方式</td></tr> <tr><td style="text-align:center;">children</td> <td style="text-align:center;">List&lt; Widget&gt;</td> <td style="text-align:center;">是</td> <td style="text-align:center;">const &lt; Widget&gt;[]</td> <td style="text-align:center;">子组件</td></tr></tbody></table> <h3 id="_3-10-column-垂直布局组件"><a href="#_3-10-column-垂直布局组件" class="header-anchor">#</a> 3-10. Column 垂直布局组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">mainAxisAlignment</td> <td style="text-align:center;">MainAxisAlignment</td> <td style="text-align:center;">是</td> <td style="text-align:center;">MainAxisAlignment.start</td> <td style="text-align:center;">主轴的排序方式</td></tr> <tr><td style="text-align:center;">crossAxisAlignment</td> <td style="text-align:center;">CrossAxisAlignment</td> <td style="text-align:center;">是</td> <td style="text-align:center;">CrossAxisAlignment.center</td> <td style="text-align:center;">次轴的排序方式</td></tr> <tr><td style="text-align:center;">children</td> <td style="text-align:center;">List&lt; Widget&gt;</td> <td style="text-align:center;">是</td> <td style="text-align:center;">const &lt; Widget&gt;[]</td> <td style="text-align:center;">子组件</td></tr></tbody></table> <h3 id="_3-11-expanded-组件-类似web中的flex布局"><a href="#_3-11-expanded-组件-类似web中的flex布局" class="header-anchor">#</a> 3-11. Expanded 组件，类似Web中的Flex布局</h3> <p>Expanded组件作为Column或Row组件的子组件使用。可设置当前组件占用父组件的比例。</p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">flex</td> <td style="text-align:center;">Int</td> <td style="text-align:center;">是</td> <td style="text-align:center;">1</td> <td style="text-align:center;">占父组件的比例(权重)</td></tr> <tr><td style="text-align:center;">child</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">子组件</td></tr></tbody></table> <h3 id="_3-12-sizedbox-占位组件"><a href="#_3-12-sizedbox-占位组件" class="header-anchor">#</a> 3-12. SizedBox 占位组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">width</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">宽度</td></tr> <tr><td style="text-align:center;">height</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">高度</td></tr> <tr><td style="text-align:center;">child</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">子组件</td></tr></tbody></table> <h3 id="_3-13-stack-层叠组件"><a href="#_3-13-stack-层叠组件" class="header-anchor">#</a> 3-13. Stack 层叠组件</h3> <p>Stack组件可以单独使用，也可配合 Align 和 Positioned 实现定位布局。其实Stack有点类似于Android原生的帧布局。</p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">alignment</td> <td style="text-align:center;">AlignmentGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">AlignmentDirectional.topStart</td> <td style="text-align:center;">所有子组件的显示位置</td></tr> <tr><td style="text-align:center;">children</td> <td style="text-align:center;">List&lt; Widget&gt;</td> <td style="text-align:center;">是</td> <td style="text-align:center;">const &lt; Widget&gt;[]</td> <td style="text-align:center;">子组件</td></tr> <tr><td style="text-align:center;">overflow</td> <td style="text-align:center;">Overflow</td> <td style="text-align:center;">是</td> <td style="text-align:center;">Overflow.clip</td> <td style="text-align:center;">子组件溢出后的处理方式</td></tr></tbody></table> <div class="language- line-numbers-mode"><pre class="language-text"><code>Stack(
+  alignment: Alignment.center,
+  children: [
+    Align(
+      alignment: Alignment.topCenter,
+      child: Container(
+        width: 100,
+        height: 100,
+        color: Colors.blue,
+      ),
+    ),
+    Container(
+      width: 100,
+      height: 100,
+      color: Colors.orange,
+    ),
+    Positioned(
+      bottom: 10,
+      child: Container(
+        width: 100,
+        height: 100,
+        color: Colors.green,
+      ),
+    )
+  ],
+);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h3 id="_3-14-align"><a href="#_3-14-align" class="header-anchor">#</a> 3-14. Align</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">alignment</td> <td style="text-align:center;">AlignmentGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">Alignment.center</td> <td style="text-align:center;">所有子组件的显示位置</td></tr> <tr><td style="text-align:center;">child</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">子组件</td></tr></tbody></table> <h3 id="_3-15-positioned"><a href="#_3-15-positioned" class="header-anchor">#</a> 3-15. Positioned</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">top</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">距顶部的距离</td></tr> <tr><td style="text-align:center;">bottom</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">距底部的距离</td></tr> <tr><td style="text-align:center;">left</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">距左边的距离</td></tr> <tr><td style="text-align:center;">right</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">距右边的距离</td></tr> <tr><td style="text-align:center;">child</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">子组件</td></tr> <tr><td style="text-align:center;">width</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">宽度</td></tr> <tr><td style="text-align:center;">height</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">高度</td></tr></tbody></table> <h3 id="_3-16-aspectratio"><a href="#_3-16-aspectratio" class="header-anchor">#</a> 3-16. AspectRatio</h3> <p>作用是可以设置子组件的宽高比。</p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">aspectRatio</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置宽高比例</td></tr> <tr><td style="text-align:center;">child</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">子组件</td></tr></tbody></table> <h3 id="_3-17-card"><a href="#_3-17-card" class="header-anchor">#</a> 3-17. Card</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">margin</td> <td style="text-align:center;">EdgeInsetsGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">外边距</td></tr> <tr><td style="text-align:center;">shape</td> <td style="text-align:center;">ShapeBorder</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">边框及阴影效果，还可以使用RoundedRectangleBorder对其设置圆角</td></tr> <tr><td style="text-align:center;">clipBehavior</td> <td style="text-align:center;">Clip</td> <td style="text-align:center;">是</td> <td style="text-align:center;">Clip.none</td> <td style="text-align:center;">对子组件的裁剪方式</td></tr> <tr><td style="text-align:center;">elevation</td> <td style="text-align:center;">doublle</td> <td style="text-align:center;">是</td> <td style="text-align:center;">1.0</td> <td style="text-align:center;">阴影高度</td></tr> <tr><td style="text-align:center;">child</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">子组件</td></tr></tbody></table> <h3 id="_3-18-circleavatar-原型头像组件"><a href="#_3-18-circleavatar-原型头像组件" class="header-anchor">#</a> 3-18. CircleAvatar 原型头像组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">backgroundImage</td> <td style="text-align:center;">ImageProvider</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置头像</td></tr> <tr><td style="text-align:center;">onBackgroundImageError</td> <td style="text-align:center;">Function(dynamic exception, StackTrace stackTrace)</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">图片加载失败的回调</td></tr></tbody></table> <h3 id="_3-19-wrap组件-流式布局组件"><a href="#_3-19-wrap组件-流式布局组件" class="header-anchor">#</a> 3-19. Wrap组件(流式布局组件)</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">spacing</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">0.0</td> <td style="text-align:center;">主轴的子组件之间的间隔</td></tr> <tr><td style="text-align:center;">runSpacing</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">0.0</td> <td style="text-align:center;">次轴的子组件之间的间隔</td></tr> <tr><td style="text-align:center;">direction</td> <td style="text-align:center;">Axis</td> <td style="text-align:center;">是</td> <td style="text-align:center;">Axis.horizontal</td> <td style="text-align:center;">子组件的排列方向，horizontal横向，vertical纵向。</td></tr> <tr><td style="text-align:center;">alignment</td> <td style="text-align:center;">WrapAlignment</td> <td style="text-align:center;">是</td> <td style="text-align:center;">WrapAlignment.start</td> <td style="text-align:center;">主轴子组件的对齐方式。</td></tr> <tr><td style="text-align:center;">runAlignment</td> <td style="text-align:center;">WrapAlignment</td> <td style="text-align:center;">是</td> <td style="text-align:center;">WrapAlignment.start</td> <td style="text-align:center;">次轴子组件的对齐方式。</td></tr> <tr><td style="text-align:center;">textDirection</td> <td style="text-align:center;">TextDirection</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">文本的排列方向。</td></tr></tbody></table> <h3 id="_3-20-按钮组件。"><a href="#_3-20-按钮组件。" class="header-anchor">#</a> 3-20. 按钮组件。</h3> <p><strong>Flutter中给我们预先定义好了一些按钮控件给我们用，常用的按钮如下</strong></p> <ul><li><p><strong>RaisedButton</strong> ：凸起的按钮，其实就是Android中的Material Design风格的Button ，继承自MaterialButton</p> <p>如果要让RaisedButton支持图标，那么可以使用RaisedButton.icon()。</p></li> <li><p><strong>FlatButton</strong> ：扁平化的按钮，继承自MaterialButton</p></li> <li><p><strong>OutlineButton</strong> ：带边框的按钮，继承自MaterialButton</p></li> <li><p><strong>IconButton</strong> ：图标按钮,继承自StatelessWidget</p></li> <li><p><strong>FloatingActionButton</strong> : 浮动按钮,继承自StatelessWidget</p></li></ul> <p>按钮通常情况下是不能直接设置宽高的，如果要设置宽高可是在外层包一个Container组件。也可以在外层包一个Expanded组件使其可以自适应宽度。</p> <p>常用属性如下</p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">onPressed</td> <td style="text-align:center;">VoidCallback</td> <td style="text-align:center;">必传</td> <td style="text-align:center;">--</td> <td style="text-align:center;">按下按钮时触发的回调方法，传null表示按钮禁用，会显示禁用相关样式。</td></tr> <tr><td style="text-align:center;">child</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">子组件，不传就无法显示内容。</td></tr> <tr><td style="text-align:center;">textColor</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">文本颜色</td></tr> <tr><td style="text-align:center;">color</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">按钮的颜色</td></tr> <tr><td style="text-align:center;">disabledColor</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">按钮禁用时的颜色</td></tr> <tr><td style="text-align:center;">disabledTextColor</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">按钮禁用时的文本颜色</td></tr> <tr><td style="text-align:center;">splashColor</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">点击按钮时水波纹的颜色</td></tr> <tr><td style="text-align:center;">highlightColor</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">点击（长按）按钮后按钮的颜色</td></tr> <tr><td style="text-align:center;">elevation</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">阴影的范围，值越大阴影范围越大</td></tr> <tr><td style="text-align:center;">padding</td> <td style="text-align:center;">EdgeInsetsGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">内边距</td></tr> <tr><td style="text-align:center;">shape</td> <td style="text-align:center;">ShapeBorder</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置按钮的形状</td></tr> <tr><td style="text-align:center;">minWidth</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">最小宽度</td></tr> <tr><td style="text-align:center;">height</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">高度</td></tr> <tr><td style="text-align:center;">materialTapTargetSize</td> <td style="text-align:center;">Material TapTargetSize</td> <td style="text-align:center;">是</td> <td style="text-align:center;">Material TapTargetSize. padded</td> <td style="text-align:center;">由于按钮按下后通常会有阴影效果，所以按钮默认都会有边距，如果不希望有边距可以通过该属性设置，MaterialTapTargetSize.padded：有边距。MaterialTapTargetSize.shrinkWrap：无边距。</td></tr></tbody></table> <h3 id="_3-21-chip-碎片组件"><a href="#_3-21-chip-碎片组件" class="header-anchor">#</a> 3-21. Chip 碎片组件</h3> <p>该组件一般用作标签。</p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">avatar</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">一般用来设置左边的图标。</td></tr> <tr><td style="text-align:center;">label</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">一般用来设置文字。</td></tr> <tr><td style="text-align:center;">deleteIcon</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">删除图标，如果设置了onDeleted回调，即使该参数不设置也会显示默认图标。</td></tr> <tr><td style="text-align:center;">deleteIconColor</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">删除图标的颜色。</td></tr> <tr><td style="text-align:center;">deleteButtonTooltipMessage</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;">delete</td> <td style="text-align:center;">删除图标被按压时的提示文字。</td></tr> <tr><td style="text-align:center;">shape</td> <td style="text-align:center;">ShapeBorder</td> <td style="text-align:center;">是</td> <td style="text-align:center;">默认为两边是半圆的形状</td> <td style="text-align:center;">设置背景形状。</td></tr> <tr><td style="text-align:center;">backgroundColor</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">背景颜色。</td></tr> <tr><td style="text-align:center;">materialTap TargetSize</td> <td style="text-align:center;">Material TapTargetSize</td> <td style="text-align:center;">是</td> <td style="text-align:center;">MaterialTap TargetSize.padded</td> <td style="text-align:center;">由于按钮按下后通常会有阴影效果，所以按钮默认都会有边距，如果不希望有边距可以通过该属性设置，MaterialTapTargetSize.padded：有边距。MaterialTapTargetSize.shrinkWrap：无边距。</td></tr></tbody></table> <h3 id="_3-22-bottomnavigationbar-底部导航条组件"><a href="#_3-22-bottomnavigationbar-底部导航条组件" class="header-anchor">#</a> 3-22. BottomNavigationBar 底部导航条组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">currentIndex</td> <td style="text-align:center;">int</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">当前选中的Tab的索引。</td></tr> <tr><td style="text-align:center;">items</td> <td style="text-align:center;">List&lt; BottomNavigationBarItem&gt;</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置当前有多少个Item。</td></tr> <tr><td style="text-align:center;">iconSize</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">24</td> <td style="text-align:center;">图标大小</td></tr> <tr><td style="text-align:center;">fixedColor</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">选中后图标及字体的颜色。该属性通常不需要设置，会默认使用主体颜色。</td></tr> <tr><td style="text-align:center;">type</td> <td style="text-align:center;">BottomNavigationBarType</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">BottomNavigationBarType.fixed : 自动将所有item都显示到屏幕上。</td></tr></tbody></table> <h3 id="_3-23-appbar-导航栏组件"><a href="#_3-23-appbar-导航栏组件" class="header-anchor">#</a> 3-23. AppBar 导航栏组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">title</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">标题</td></tr> <tr><td style="text-align:center;">centerTitle</td> <td style="text-align:center;">bool</td> <td style="text-align:center;">是</td> <td style="text-align:center;">false</td> <td style="text-align:center;">标题是否居中显示</td></tr> <tr><td style="text-align:center;">actions</td> <td style="text-align:center;">List&lt; Widget&gt;</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">右边菜单</td></tr> <tr><td style="text-align:center;">leading</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">左边的导航图标</td></tr></tbody></table> <h3 id="_3-24-defaulttabcontroller-组件-实现类似于android中的tablayout效果"><a href="#_3-24-defaulttabcontroller-组件-实现类似于android中的tablayout效果" class="header-anchor">#</a> 3-24. DefaultTabController 组件（实现类似于Android中的TabLayout效果）</h3> <p>要实现类似Android中的LabLayout效果还需要结合另外两个组件TabBar和TabBarView一起使用，以下是这三个组件的具体参数介绍以及代码示例：</p> <ol><li>DefaultTabController</li></ol> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">length</td> <td style="text-align:center;">int</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置有多少个tab。</td></tr> <tr><td style="text-align:center;">initialIndex</td> <td style="text-align:center;">int</td> <td style="text-align:center;">是</td> <td style="text-align:center;">0</td> <td style="text-align:center;">默认选中第几个tab，索引从0开始。</td></tr> <tr><td style="text-align:center;">child</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">child通常是一个Scaffold组件，但是需要有特俗的写法。下面会给出栗子。</td></tr></tbody></table> <ol start="2"><li>TabBar</li></ol> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">isScrollable</td> <td style="text-align:center;">bool</td> <td style="text-align:center;">是</td> <td style="text-align:center;">false</td> <td style="text-align:center;">设置是否开启滚动，tab过多时建议开启，否则无法显示。</td></tr> <tr><td style="text-align:center;">tabs</td> <td style="text-align:center;">List&lt; Widget&gt;</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置tab，具体有多少个tab由集合的长度决定。</td></tr> <tr><td style="text-align:center;">controller</td> <td style="text-align:center;">TabController</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">用于自己定义控制器。</td></tr> <tr><td style="text-align:center;">indicatorColor</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置指示器的颜色，默认会根据主题色做出调整。</td></tr> <tr><td style="text-align:center;">indicatorWeight</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">2.0</td> <td style="text-align:center;">设置指示器的高度。</td></tr> <tr><td style="text-align:center;">indicatorPadding</td> <td style="text-align:center;">EdgeInsetsGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">EdgeInsets.zero</td> <td style="text-align:center;">底部指示器的padding，</td></tr> <tr><td style="text-align:center;">indicator</td> <td style="text-align:center;">Decoration</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置Tab的样式，例如边框等。</td></tr> <tr><td style="text-align:center;">indicatorSize</td> <td style="text-align:center;">TabBarIndicatorSize</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">指示器大小的计算方式，TabBarIndicatorSize.label：和文字等宽，TabBarIndicatorSize.tab：和tab等宽。</td></tr> <tr><td style="text-align:center;">labelColor</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">统一设置标签字体颜色，默认与指示器颜色一致。</td></tr> <tr><td style="text-align:center;">lablStyle</td> <td style="text-align:center;">TextStyle</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">统一设置选中时标签字体样式。</td></tr> <tr><td style="text-align:center;">unselectedLabelColor</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置未选中时标签字体颜色，默认与指示器颜色一致。</td></tr> <tr><td style="text-align:center;">unselectedLabelStyle</td> <td style="text-align:center;">TextStyle</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置未选中时标签字体样式。</td></tr></tbody></table> <div class="language- line-numbers-mode"><pre class="language-text"><code>import 'package:flutter/material.dart';
+
+class MovieDetailPage extends StatelessWidget {
+  final data;
+
+  List&lt;String&gt; get _movies {
+    return data['movies'];
+  }
+
+  int get _index {
+    return data['index'];
+  }
+
+  MovieDetailPage(this.data);
+
+  @override
+  Widget build(BuildContext context) {
+    return DefaultTabController(  // 1.要实现Android中的TabLayout需要使用DefaultTabController组件。
+      initialIndex: this._index,
+      length: _movies.length,
+      child: Scaffold(    // 2.使用Scaffold作为DefaultTabController组件的child。
+        appBar: AppBar(   // 3.设置appBar。
+          title: Text('电影专区'),
+          centerTitle: true,
+          bottom: TabBar(  // 4.设置bottom属性为TabBar组件。
+            isScrollable: true,  // 5.如果tab过多时需要将isScrollable属性设置为true，否者无法显示。默认为false。
+            tabs: _movies.map((movie) =&gt; Tab(text: movie)).toList()  // 6.设置tab的样式，建议使用Tab组件。
+          ),
+        ),
+        body: TabBarView(  // 7.设置body属性为TabBarView组件。
+          children: _movies.map((movie) {   // 8.为TabBarView设置每个页面的具体内容(绘制每个页面)。
+            return Align(
+                alignment: Alignment.center, child: Text('电影《$movie》的详情页面。'));
+          }).toList(),
+        ),
+      ),
+    );
+  }
+}
+
+
+//调用
+Navigator.push(context, MaterialPageRoute(builder: (context) {
+  return MovieDetailPage({
+    'index': 0,
+    'movies': [
+      '天龙八部',
+      '奇异博士',
+      '蜘蛛侠',
+      '复仇者联盟-无限战争',
+      '复仇者联盟-逆转无限'
+    ]
+  });
+}));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br></div></div><p>他还有一种高级用法，可以自己监听生命周期，并监听滚动事件等。具体用法如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import 'package:flutter/material.dart';
+
+class SuperiorTabControllerPage extends StatefulWidget{
+  @override
+  State&lt;StatefulWidget&gt; createState() {
+    return _SuperiorTabControllerPageState();
+  }
+}
+
+class _SuperiorTabControllerPageState extends State&lt;SuperiorTabControllerPage&gt; with SingleTickerProviderStateMixin{
+
+  TabController _tabController;
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(
+      length: 2,
+      vsync: this  //1.固定写法
+    );
+    _tabController.addListener(() {
+      print(this._tabController.index);
+    });
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('TabController的高级用法'),
+        bottom: TabBar(
+          controller: this._tabController,  //2.TabBar必须设置自己定义的TabController
+          indicatorSize: TabBarIndicatorSize.label,
+          tabs: [
+            Tab(text: '科幻'),
+            Tab(text: '悬疑')
+          ],
+        ),
+      ),
+      body: TabBarView(
+        controller: this._tabController,  //3.TabBarView必须设置自己定义的TabController
+        children: [
+          Center(
+            child: Text('科幻'),
+          ),
+          Center(
+            child: Text('悬疑'),
+          ),
+        ],
+      ),
+    );
+  }
+}
+//调用
+Navigator.push(context, MaterialPageRoute(
+  builder: (context) =&gt; SuperiorTabControllerPage()
+))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br></div></div><h3 id="_3-25-divider-线条组件"><a href="#_3-25-divider-线条组件" class="header-anchor">#</a> 3-25. Divider 线条组件</h3> <p>该组件通常用于在一面中绘制一条线。</p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">height</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">线条的高度</td></tr> <tr><td style="text-align:center;">color</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">线条的颜色</td></tr></tbody></table> <h3 id="_3-26-listtile-条目组件"><a href="#_3-26-listtile-条目组件" class="header-anchor">#</a> 3-26. ListTile 条目组件</h3> <p>该组件可以快速绘制类似于个人中心页面中的条目，或则手机设置页面中的条目。</p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">leading</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">通常用于设置左侧的图标。</td></tr> <tr><td style="text-align:center;">title</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">通常用于设置标题。</td></tr> <tr><td style="text-align:center;">subtitle</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">通常用于设置子标题。</td></tr> <tr><td style="text-align:center;">onTap</td> <td style="text-align:center;">GestureTapCallback</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">用于监听点击事件。</td></tr></tbody></table> <h3 id="_3-27-drawer-抽屉组件"><a href="#_3-27-drawer-抽屉组件" class="header-anchor">#</a> 3-27. Drawer 抽屉组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">elevation</td> <td style="text-align:center;">double</td> <td style="text-align:center;">是</td> <td style="text-align:center;">16.0</td> <td style="text-align:center;">设置阴影高度</td></tr> <tr><td style="text-align:center;">child</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">绘制抽屉中的内容</td></tr></tbody></table> <p>在使用Drawer组件的时候我们通常要为抽屉设置头，否则会有点难看。如果要设置头就需要用到一下两个组件：</p> <ol><li>DrawerHeader</li></ol> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">decoration</td> <td style="text-align:center;">Decoration</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">用于设置样式，通常使用BoxDecoration。</td></tr> <tr><td style="text-align:center;">margin</td> <td style="text-align:center;">EdgeInsetsGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置外边距</td></tr> <tr><td style="text-align:center;">padding</td> <td style="text-align:center;">EdgeInsetsGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置内边距</td></tr> <tr><td style="text-align:center;">child</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">绘制内容视图</td></tr></tbody></table> <ol start="2"><li>UserAccountsDrawerHeader</li></ol> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">accountName</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置用户名</td></tr> <tr><td style="text-align:center;">accountEmail</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置用户邮箱</td></tr> <tr><td style="text-align:center;">currentAccountPicture</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置当前用户头像</td></tr> <tr><td style="text-align:center;">onDetailsPressed</td> <td style="text-align:center;">VoidCallback</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">用户信息被点击后的监听。</td></tr> <tr><td style="text-align:center;">arrowColor</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">当设置了onDetailsPressed后右侧会出现一个小的三角箭头，该参数用于设置箭头颜色。</td></tr> <tr><td style="text-align:center;">otherAccountsPictures</td> <td style="text-align:center;">List&lt; Widget&gt;</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">用于设置其他用户头像，设置后会在当前头像的右侧出现小的头像。</td></tr></tbody></table> <p>如果需要用代码关闭抽屉可以使用下面的方式：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Navigator.pop(context)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_3-28-textfield-文本框组件"><a href="#_3-28-textfield-文本框组件" class="header-anchor">#</a> 3-28. TextField 文本框组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">decoration</td> <td style="text-align:center;">InputDecoration</td> <td style="text-align:center;">是</td> <td style="text-align:center;">InputDecoration()</td> <td style="text-align:center;">设置边框、hint、lable、图标等</td></tr> <tr><td style="text-align:center;">obscureText</td> <td style="text-align:center;">bool</td> <td style="text-align:center;">是</td> <td style="text-align:center;">false</td> <td style="text-align:center;">是否隐藏明文显示内容(密码模式)。</td></tr> <tr><td style="text-align:center;">obscuringCharacter</td> <td style="text-align:center;">String</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">当obscureText为true时，用于设置显示的文字。</td></tr> <tr><td style="text-align:center;">maxLines</td> <td style="text-align:center;">int</td> <td style="text-align:center;">是</td> <td style="text-align:center;">1</td> <td style="text-align:center;">最大行数，当设置大于1时为多行输入模式。</td></tr> <tr><td style="text-align:center;">minLines</td> <td style="text-align:center;">int</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">最小输入行数，主要是用来设置最小高度。</td></tr> <tr><td style="text-align:center;">controller</td> <td style="text-align:center;">TextEditingController</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">用于设置默认显示内容以及获取编辑框中的内容。</td></tr> <tr><td style="text-align:center;">onChanged</td> <td style="text-align:center;">ValueChanged&lt; String&gt;</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">监听内容的改变。</td></tr> <tr><td style="text-align:center;">onEditingComplete</td> <td style="text-align:center;">VoidCallback</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">监听焦点的丢失(编辑完成)</td></tr></tbody></table> <h3 id="_3-29-checkbox-多选框组件"><a href="#_3-29-checkbox-多选框组件" class="header-anchor">#</a> 3-29. CheckBox 多选框组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">value</td> <td style="text-align:center;">bool</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置是否选中</td></tr> <tr><td style="text-align:center;">onChanged</td> <td style="text-align:center;">ValueChanged&lt; bool&gt;</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">监听选中状态的改变</td></tr></tbody></table> <h3 id="_3-30-checkboxlisttile组件"><a href="#_3-30-checkboxlisttile组件" class="header-anchor">#</a> 3-30. CheckboxListTile组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">value</td> <td style="text-align:center;">bool</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置是否选中</td></tr> <tr><td style="text-align:center;">onChanged</td> <td style="text-align:center;">ValueChanged&lt; bool&gt;</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">监听选中状态的改变</td></tr> <tr><td style="text-align:center;">title</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">通常用于设置标题。</td></tr> <tr><td style="text-align:center;">subtitle</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">通常用于设置子标题。</td></tr> <tr><td style="text-align:center;">secondary</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">配置图标或者图片。</td></tr> <tr><td style="text-align:center;">selected</td> <td style="text-align:center;">bool</td> <td style="text-align:center;">是</td> <td style="text-align:center;">false</td> <td style="text-align:center;">选中的时候文字是否跟着改变。</td></tr></tbody></table> <h3 id="_3-31-radio-单选框组件"><a href="#_3-31-radio-单选框组件" class="header-anchor">#</a> 3-31. Radio 单选框组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">value</td> <td style="text-align:center;">T</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置当前单选框所代表的值。</td></tr> <tr><td style="text-align:center;">onChanged</td> <td style="text-align:center;">ValueChanged&lt; T&gt;</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">监听选中状态的改变，并将当前单选框所代表的值(T)回传。</td></tr> <tr><td style="text-align:center;">groupValue</td> <td style="text-align:center;">T</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">为当前单选框分组。</td></tr></tbody></table> <h3 id="_3-32-radiolisttile组件"><a href="#_3-32-radiolisttile组件" class="header-anchor">#</a> 3-32. RadioListTile组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">value</td> <td style="text-align:center;">T</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置当前单选框所代表的值。</td></tr> <tr><td style="text-align:center;">onChanged</td> <td style="text-align:center;">ValueChanged&lt; T&gt;</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">监听选中状态的改变，并将当前单选框所代表的值(T)回传。</td></tr> <tr><td style="text-align:center;">title</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">通常用于设置标题。</td></tr> <tr><td style="text-align:center;">subtitle</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">通常用于设置子标题。</td></tr> <tr><td style="text-align:center;">secondary</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">配置图标或者图片。</td></tr> <tr><td style="text-align:center;">selected</td> <td style="text-align:center;">bool</td> <td style="text-align:center;">是</td> <td style="text-align:center;">false</td> <td style="text-align:center;">选中的时候文字是否跟着改变。</td></tr> <tr><td style="text-align:center;">groupValue</td> <td style="text-align:center;">T</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">为当前单选框分组。</td></tr></tbody></table> <h3 id="_3-33-switch-开关组件"><a href="#_3-33-switch-开关组件" class="header-anchor">#</a> 3-33. Switch 开关组件</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">value</td> <td style="text-align:center;">bool</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置是否选中</td></tr> <tr><td style="text-align:center;">onChanged</td> <td style="text-align:center;">ValueChanged&lt; bool&gt;</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">监听选中状态的改变</td></tr></tbody></table> <h3 id="_3-34-日期组件以及日期和时间戳"><a href="#_3-34-日期组件以及日期和时间戳" class="header-anchor">#</a> 3-34. 日期组件以及日期和时间戳</h3> <ul><li>日期和时间戳</li></ul> <p>日期转化成时间戳</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>print(DateTime.now().millisecondsSinceEpoch)
+//输出：1600925003761
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>时间戳转换成日期：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>print(DateTime.fromMillisecondsSinceEpoch(1600925003761))
+//输出：2020-09-24 13:23:23:761
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>使用系统的日期选择组件：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>showDatePicker(
+  context: context,
+  initialDate: DateTime.now(), //默认选中的日期
+  firstDate: DateTime(2019),  //开始(最早)日期
+  lastDate: DateTime(2050)  //结束(最晚)日期
+).then((value) =&gt; setState(() =&gt; date = value));
+//showDatePicker方法返回的是Future&lt;DateTime&gt;类型，所以这里使用then方法接收结果。但也可以使用async结合await的方式。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>使用系统的时间选择组件：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>showTimePicker(context: context, initialTime: TimeOfDay.now())
+  .then((value) =&gt; setState(() =&gt; time = value.format(context)));
+//showTimePicker方法返回的是Future&lt;TimeOfDay&gt;类型，所以这里使用then方法接收结果。但也可以使用as
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="四、第三方组件库"><a href="#四、第三方组件库" class="header-anchor">#</a> 四、第三方组件库</h2> <div class="custom-block tip"><p class="title"></p><p>虽然Flutter为我们提供了很多的Widget，但有时Flutter为我们提供的组件无法满足我们需求，这时我们就需要使用一些第三方的Widget组件。我们可以通过网站pub.dev来找到我们想要的Widget组件进行使用。</p></div><h3 id="_4-1-toast-组件"><a href="#_4-1-toast-组件" class="header-anchor">#</a> 4-1. Toast 组件</h3> <ul><li><p>地址：<a href="https://pub.dev/packages/toast" target="_blank" rel="noopener noreferrer">https://pub.dev/packages/toast<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>使用：</p> <ol><li>在pubspec.yaml文件中的dependencies节点下添加toast: ^版本号：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>dependencies:
+flutter:
+  sdk: flutter
+
+#Toast
+toast: ^0.1.5  #例如这里添加0.1.5版本
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ol start="2"><li>在代码中使用:</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>import 'package:toast/toast.dart'
+Toast.show('我是一个Toast', context, gravity: Toast.CENTER);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li></ul> <h3 id="_4-2-swiper-轮播图组件"><a href="#_4-2-swiper-轮播图组件" class="header-anchor">#</a> 4-2. Swiper 轮播图组件</h3> <ul><li><p>地址：<a href="https://pub.dev/packages/flutter_swiper" target="_blank" rel="noopener noreferrer">https://pub.dev/packages/flutter_swiper<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>使用：</p> <ol><li>在pubspec.yaml文件中的dependencies节点下添加flutter_swiper: ^版本号：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>dependencies:
+flutter:
+  sdk: flutter
+
+#轮播图组件
+flutter_swiper: ^1.1.6  #例如这里添加1.1.6版本
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ol start="2"><li>在代码中使用:</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>import 'package:flutter_swiper/flutter_swiper.dart';
+
+Swiper(
+  itemCount: images.length,  //设置一共有多少个item
+  itemBuilder: (context, index) {  //构建没给item
+    return Container(
+      child: Image.network(images[index], fit: BoxFit.cover),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+      ),
+      clipBehavior: Clip.antiAlias,
+    );
+  },
+  pagination: SwiperPagination(),//显示指示器
+  autoplay: true,  //是否自动播放
+  viewportFraction: 0.8, //当前页的占比，如果小于1，那么剩下的部分将有左右两边填充。
+  scale: 0.9, //每个Banner的缩放比例
+  onTap: (i) =&gt; setState(()=&gt; _currentIndex = i),  //条目点击监听
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div></li></ul> <h3 id="_4-3-dateformat-日期格式化组件"><a href="#_4-3-dateformat-日期格式化组件" class="header-anchor">#</a> 4-3. DateFormat 日期格式化组件</h3> <ul><li><p>地址：<a href="https://pub.dev/packages/date_format" target="_blank" rel="noopener noreferrer">https://pub.dev/packages/date_format<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>在代码中使用：</p> <ol><li>在pubspec.yaml文件中的dependencies节点下添加date_format: ^版本号：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>dependencies:
+flutter:
+  sdk: flutter
+
+#日期格式化
+date_format: ^1.0.9  #例如这里添加1.0.9版本
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ol start="2"><li>使用：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>import 'package:date_format/date_format.dart' as df;
+
+String formatDate(DateTime date, DateType type){
+  return df.formatDate(date, _getFormat(type));
+}
+
+_getFormat(DateType type){
+  switch (type) {
+    case DateType.yyyy_MM_dd:
+      return ['yyyy', '-', 'mm', '-', 'dd'];
+    case DateType.yyyy_MM_dd_HH:
+      return ['yyyy', '-', 'mm', '-', 'dd', ' ', 'HH'];
+    case DateType.yyyy_MM_dd_HH_mm:
+      return ['yyyy', '-', 'mm', '-', 'dd', ' ', 'HH', ':', 'nn'];
+    case DateType.yyyy_MM_dd_HH_mm_ss:
+      return ['yyyy', '-', 'mm', '-', 'dd', ' ', 'HH', ':', 'nn', &quot;:&quot;, 'ss'];
+    case DateType.HH_mm_ss:
+      return ['HH', ':', 'nn', &quot;:&quot;, 'ss'];
+    case DateType.HH_mm:
+      return ['HH', ':', 'nn'];
+  }
+}
+
+enum DateType{
+  yyyy_MM_dd,
+  yyyy_MM_dd_HH,
+  yyyy_MM_dd_HH_mm,
+  yyyy_MM_dd_HH_mm_ss,
+  HH_mm,
+  HH_mm_ss
+}
+//使用方式如下
+formatDate(date, DateType.yyyy_MM_dd)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div></li></ul> <h2 id="五、dialog-弹窗"><a href="#五、dialog-弹窗" class="header-anchor">#</a> 五、Dialog 弹窗</h2> <p><strong>如果要使用AlertDialog则需要使用showDialog(context, builder)方法。该方法有两个核心参数如下：</strong></p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">context</td> <td style="text-align:center;">BuildContext</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">build方法中的上下文。</td></tr> <tr><td style="text-align:center;">builder</td> <td style="text-align:center;">Widget Function(BuildContext context)</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">构建Dialog的回调函数。</td></tr></tbody></table> <p>第一个参数context比较简单，只要将Widget的build方法中的context或则State中的context成员传入即可。第二个参数builder则是一个Function。你需要定义一个Function并返回你创建好的Widget，这个Widget可以是以下几种：</p> <p><strong>1. AlertDialog</strong></p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">title</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置标题</td></tr> <tr><td style="text-align:center;">titlePadding</td> <td style="text-align:center;">EdgeInsetsGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">标题的内边距</td></tr> <tr><td style="text-align:center;">titleTextStyle</td> <td style="text-align:center;">TextStyle</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">标题的字体样式</td></tr> <tr><td style="text-align:center;">content</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置内容</td></tr> <tr><td style="text-align:center;">contentPadding</td> <td style="text-align:center;">EdgeInsetsGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">EdgeInsets.fromLTRB(24.0, 20.0, 24.0, 24.0)</td> <td style="text-align:center;">内容的内边距</td></tr> <tr><td style="text-align:center;">contentTextStyle</td> <td style="text-align:center;">TextStyle</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">内容的字体样式</td></tr> <tr><td style="text-align:center;">actions</td> <td style="text-align:center;">List&lt; Widget&gt;</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置按钮</td></tr></tbody></table> <div class="language- line-numbers-mode"><pre class="language-text"><code>showDialog(
+    context: context,
+    builder: (context){
+      return AlertDialog(
+        title: Text('提示'),
+        content: Text('您觉的这个Demo对您的帮助大吗？'),
+        actions: [
+          FlatButton(
+            child: Text('是的'),
+            onPressed: () {
+              Navigator.pop(context);
+              Toast.show(context, '谢谢您的认可~');
+            },
+          ),
+          FlatButton(
+            child: Text('非常大'),
+            onPressed: () {
+              Navigator.pop(context);
+              Toast.show(context, '您真是一个好人呐~');
+            },
+          )
+        ],
+      );
+    }
+);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p>有些情况下我们需要获取Dialog操作后的返回值，这时可以分为以下几步：</p> <ol><li>自定义函数上加上async关键字。</li> <li>在showDialog方法前面加上await关键字并定义一个变量接收该方法的返回值。</li> <li>Navigator.pop()退出弹窗时传入要返回的值。</li> <li>拿到showDialog方法的返回结果做相应处理。</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>_showAlertDialog() async{ //1.加上async关键字
+  var result = await showDialog(  //2.加上await关键字并用变量接收
+      context: context,
+      builder: (context){
+        return AlertDialog(
+          title: Text('提示'),
+          content: Text('您觉的这个Demo对您的帮助大吗？'),
+          actions: [
+            FlatButton(
+              child: Text('是的'),
+              onPressed: () {
+                Navigator.pop(context, '您点击了按钮：是的');  //3.退出弹出时传入要返回的值。
+                Toast.show(context, '谢谢您的认可~');
+              },
+            ),
+            FlatButton(
+              child: Text('非常大'),
+              onPressed: () {
+                Navigator.pop(context, '您点击了按钮：非常大');  //3.退出弹出时传入要返回的值。
+                Toast.show(context, '您真是一个好人呐~');
+              },
+            )
+          ],
+        );
+      }
+  );
+  print(result);  //4.拿到showDialog方法的返回结果做相应处理。
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p><strong>2. SimpleDialog</strong></p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">title</td> <td style="text-align:center;">Widget</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置标题</td></tr> <tr><td style="text-align:center;">titlePadding</td> <td style="text-align:center;">EdgeInsetsGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 0.0)</td> <td style="text-align:center;">标题的内边距</td></tr> <tr><td style="text-align:center;">titleTextStyle</td> <td style="text-align:center;">TextStyle</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">标题的字体样式</td></tr> <tr><td style="text-align:center;">children</td> <td style="text-align:center;">List&lt; Widget&gt;</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置内容,通常使用SimpleDialogOption作为元素。</td></tr> <tr><td style="text-align:center;">contentPadding</td> <td style="text-align:center;">EdgeInsetsGeometry</td> <td style="text-align:center;">是</td> <td style="text-align:center;">EdgeInsets.fromLTRB(0.0, 12.0, 0.0, 16.0)</td> <td style="text-align:center;">内容的内边距</td></tr> <tr><td style="text-align:center;">backgroundColor</td> <td style="text-align:center;">Color</td> <td style="text-align:center;">是</td> <td style="text-align:center;">--</td> <td style="text-align:center;">设置背景颜色</td></tr></tbody></table> <div class="language- line-numbers-mode"><pre class="language-text"><code>_showSimpleDialog() async{
+  var result = await showDialog(
+      context: context,
+      builder: (context){
+        return SimpleDialog(
+          title: Center(
+            child: Text('请您选择'),
+          ),
+          children:[
+            SimpleDialogOption(
+              child: Text('第一个选项'),
+              onPressed: (){
+                Navigator.pop(context, '您点击了: 第一个选项');
+              },
+            ),
+            Divider(height: 0),
+            SimpleDialogOption(
+              child: Text('第二个选项'),
+              onPressed: (){
+                Navigator.pop(context, '您点击了: 第二个选项');
+              },
+            ),
+            Divider(height: 0),
+            SimpleDialogOption(
+              child: Text('第三个选项'),
+              onPressed: (){
+                Navigator.pop(context, '您点击了: 第三个选项');
+              },
+            )
+          ],
+        );
+      }
+  );
+  print(result??'您取消了选择');
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><p><strong>3. BottomSheet</strong>
+如果要使用BottomSheet则需要使用showModalBottomSheet(context, builder)方法。该方法有两个核心参数如下：</p> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">可选</th> <th style="text-align:center;">默认值</th> <th style="text-align:center;">说明</th></tr></thead> <tbody><tr><td style="text-align:center;">context</td> <td style="text-align:center;">BuildContext</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">build方法中的上下文。</td></tr> <tr><td style="text-align:center;">builder</td> <td style="text-align:center;">Widget Function(BuildContext context)</td> <td style="text-align:center;">必填</td> <td style="text-align:center;">--</td> <td style="text-align:center;">构建你的自定义布局。</td></tr></tbody></table> <div class="language- line-numbers-mode"><pre class="language-text"><code>_showBottomSheet() async{
+  var result = await showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (context) {
+        return Container(
+          height: 290,
+          child: Column(
+            children: [
+              ListTile(
+                title: Text('第一个条目'),
+                onTap: () =&gt; Navigator.pop(context, '第一个条目'),
+              ),
+              Divider(height: 0),
+              ListTile(
+                title: Text('第二个条目'),
+                onTap: () =&gt; Navigator.pop(context, '第二个条目'),
+              ),
+              Divider(height: 0),
+              ListTile(
+                title: Text('第三个条目'),
+                onTap: () =&gt; Navigator.pop(context, '第三个条目'),
+              ),
+              Divider(height: 0),
+              ListTile(
+                title: Text('第四个条目'),
+                onTap: () =&gt; Navigator.pop(context, '第四个条目'),
+              ),
+              Divider(height: 0),
+              ListTile(
+                title: Text('第五个条目'),
+                onTap: () =&gt; Navigator.pop(context, '第五个条目'),
+              ),
+            ],
+          ),
+        );
+      }
+  );
+  print('您点击了：$result');
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><p><strong>4. 自定义Dialog</strong>
+在Flutter中，如果要自定义Dialog，需要以下几个步骤：</p> <ul><li>声明一个类并继承自Dialog。</li> <li>重写Dialog中的Widget build(BuildContext context)方法。</li> <li>在Widget build(BuildContext context)方法中返回的Widget必须以Material组件作为根节点。</li> <li>通常情况下我们的Dialog都是有透明背景的，就是Dialog弹出后仍然能看到一部分原来的页面，所以我们需要给Material组件设置type属性为：MaterialType.transparency。</li></ul> <p>下面的栗子就是自定义一个Dialog</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>class CustomDialog extends Dialog {
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      type: MaterialType.transparency,
+      child: Stack(  //从这里开始就可以写我们自己想要的界面了。
+        alignment: Alignment.center,
+        children: [
+          Container(
+            margin: EdgeInsets.only(left: 40, right: 40),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(8),
+                          topRight: Radius.circular(8))),
+                  child: Column(
+                    children: [
+                      SizedBox(height: 12),
+                      Text('提示',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 15)),
+                      SizedBox(height: 12),
+                      Divider(height: 0),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(12),
+                  color: Colors.white,
+                  constraints: BoxConstraints(minHeight: 100),
+                  child: Center(
+                    child: Text('这是一个自定义弹出，你知道了吗？'),
+                  ),
+                ),
+                Divider(height: 0),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        height: 50,
+                        child: FlatButton(
+                          color: Colors.white,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(8))),
+                          child: Text('不知道'),
+                          materialTapTargetSize:
+                          MaterialTapTargetSize.shrinkWrap,
+                          onPressed: () {
+                            Navigator.pop(context, '我看你该挨揍了。');
+                          },
+                        ),
+                      ),
+                    ),
+                    VerticalDivider(width: 0.1),
+                    Expanded(
+                      child: Container(
+                        height: 50,
+                        child: FlatButton(
+                          color: Colors.white,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.only(
+                                  bottomRight: Radius.circular(8))),
+                          child: Text('知道了',
+                              style: TextStyle(color: Colors.blue)),
+                          materialTapTargetSize:
+                          MaterialTapTargetSize.shrinkWrap,
+                          onPressed: () {
+                            Navigator.pop(context, '不错，你很聪明。');
+                          },
+                        ),
+                      ),
+                    )
+                  ],
+                )
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br></div></div><p>使用上面的自定义Dialog和普通的Dialog没有什么区别，下面是使用时的代码：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> _showCustomDialog() async {
+  var result = await showDialog(
+      context: context,
+      builder: (context) {
+        return CustomDialog();
+      });
+  print(result);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>如果要实现打开弹窗后的一段时间之后自动关闭弹窗则可以结合Dart中的Timer定时器实现：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Timer.periodic(Duration(seconds: 5), (timer) {
+  timer.cancel();
+  //do something,such as dismiss the dialog.
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="六、注解"><a href="#六、注解" class="header-anchor">#</a> 六、注解</h2> <h3 id="_6-1-override-重写"><a href="#_6-1-override-重写" class="header-anchor">#</a> 6-1. @override 重写</h3> <p>该注解用于表示一个成员是继承自父类。</p> <h3 id="_6-2-protected"><a href="#_6-2-protected" class="header-anchor">#</a> 6-2. @protected</h3> <p>该注解只能应用于一个类中的成员，表示该成员只能被子类调用或扩展，也可以在混合类中直接或间接的调用。</p> <h3 id="_6-3-mustcallsuper"><a href="#_6-3-mustcallsuper" class="header-anchor">#</a> 6-3. @mustCallSuper</h3> <p>该注解应用在方法上，表示该方法如果被子类重写了，那么子类则必须调用super。</p> <h2 id="七、路由"><a href="#七、路由" class="header-anchor">#</a> 七、路由</h2> <div class="custom-block tip"><p class="title"></p><p>Flutter中路由的核心类为Navigator，如果要打开新的页面则需要调用push方法，如果要退出页面则需要调用pop方法。</p></div><h3 id="_7-1-普通路由"><a href="#_7-1-普通路由" class="header-anchor">#</a> 7-1. 普通路由</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Navigator.push(context, MaterialPageRoute(
+  builder:(context){
+    return SecondPage();   //这里返回目标页面。
+  }
+));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_7-2-普通路由传值"><a href="#_7-2-普通路由传值" class="header-anchor">#</a> 7-2. 普通路由传值</h3> <p>普通路由的传值方式其实就是在构造要跳转的页面时将参数传入。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Navigator.push(context, MaterialPageRoute(
+  builder:(context){
+    return SecondPage(title: '第二个页面');   //这里构建要跳转的页面时直接传入参数。
+  }
+));
+
+class SecondPage extends StatelessWidget{
+
+  final String title;
+  SecondPage({this.title = &quot;&quot;});  //这里接受外面传入的参数
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(this.title),  //这里使用外面传入的参数
+      ),
+      body: Align(
+        alignment: Alignment.center,
+        child: Text(&quot;我是${this.title}&quot;),  //这里使用外面传入的参数
+      ),
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h3 id="_7-3-命名路由"><a href="#_7-3-命名路由" class="header-anchor">#</a> 7-3. 命名路由</h3> <p>命名路由的使用分以下两步：</p> <ol><li>在主入口中的MaterialApp中配置routes,routes接受的数据类型时Map，Map的key是路由命名，值是初始具体跳转到某个页面的回调。</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>void main() =&gt; runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: Tabs(),
+      routes: {  //使用routes参数配置命名路由。
+        '/second': (context) =&gt; SecondPage()  //这里定义了一个命名路由‘/second’并制定跳转到SecondPage页面。
+      },
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><ol start="2"><li>利用pushNamed方法使用已经定义好的路由。</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Navigator.pushNamed(context, '/second'); 
+//这里的‘/second’就是我们已经定义好的路由，必须和已经定义好的名称保持一致。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_7-4-命名路由传值"><a href="#_7-4-命名路由传值" class="header-anchor">#</a> 7-4. 命名路由传值</h3> <p>命名路由的传值略微有点复杂，具体代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>void main() =&gt; runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+
+  //将我们所有的路由定义为成员变量。
+  final routes = {
+    '/second': (context, {arguments}) =&gt; SecondPage(title: arguments['title'])
+  };
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: Tabs(),
+        onGenerateRoute: (RouteSettings settings){  //利用onGenerateRoute自己处理传参及跳转。
+          final String name = settings.name;  //获取路由名称
+          final Function pageContentBuilder = this.routes[name]; //根据名称获取具体跳转的方法
+          if(pageContentBuilder != null) { //判断方法是否为空，如果空则抛出异常。
+            return MaterialPageRoute(
+                builder: (context) {
+                  if(settings.arguments != null) {  //如果有参数则调用我们自定义的方法传入参数
+                    return pageContentBuilder(context, arguments: settings.arguments);
+                  }else {
+                    return pageContentBuilder(context);  //没有参数时则忽略arguments
+                  }
+                }
+            );
+          }else {
+            throw ArgumentError('route &quot;$name&quot; not implements!');
+          }
+        },
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><p>路由已经定义好了，那么调用的方式如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Navigator.pushNamed(context, '/second', arguments: {
+  'title': '第二个页面'
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>代码抽离：</p> <ol><li>入口文件</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>import 'package:flutter/material.dart';
+import 'package:flutter_demo_one/pages/route.dart';
+
+void main() =&gt; runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        initialRoute: '/',
+        onGenerateRoute: generateRoute,
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><ol start="2"><li>Route文件</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>import 'package:flutter/material.dart';
+import 'package:flutter_demo_one/pages/hospital/hospitalDetailPage.dart';
+
+import 'pages/main/tabs.dart';
+
+final routes = {
+  '/': (context) =&gt; Tabs(),
+  '/hospital': (context, {arguments}) =&gt; HospitalDetailPage(arguments)
+};
+
+Function generateRoute = (RouteSettings settings){
+  final String name = settings.name;
+  final Function pageContentBuilder = routes[name];
+  if(pageContentBuilder != null) {
+    return MaterialPageRoute(
+        builder: (context) {
+          if(settings.arguments != null) {
+            return pageContentBuilder(context, arguments: settings.arguments);
+          }else {
+            return pageContentBuilder(context);
+          }
+        }
+    );
+  }else {
+    throw ArgumentError('route &quot;$name&quot; not implements!');
+  }
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h3 id="_7-5-替换路由"><a href="#_7-5-替换路由" class="header-anchor">#</a> 7-5. 替换路由</h3> <p>替换路由其实就是用要打开的新的页面来替换当前页面，例如：A是第一页面(主页面)，A正常打开了B页面，而B又用替换路由打开了C，那么此时的页面栈中就只有AC两个页面，如果在C页面中点击返回按钮后( Navigator.pop() )就会直接显示A而不会显示B。</p> <p><strong>注意</strong>：使用替换路由时，被打开的页面是否有返回按钮(左上角的返回箭头)取决于当前页面是否有返回按钮。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Navigator.pushReplacementNamed(context, '/testPage2', arguments: {
+    'title':'页面标题'
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="八、-网络请求"><a href="#八、-网络请求" class="header-anchor">#</a> 八、 网络请求</h2> <h3 id="_8-1-json-与-map-相互转换。"><a href="#_8-1-json-与-map-相互转换。" class="header-anchor">#</a> 8-1. Json 与 Map 相互转换。</h3> <ul><li>Json转Map</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>final String _json = '{&quot;username&quot;:&quot;张三&quot;,&quot;age&quot;:23}'; //json字符串数据
+
+print(json.decode(_json)['username'])  //输出：张三
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>Map转Json</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>final Map _map = {
+  &quot;username&quot;:&quot;张三&quot;,
+  &quot;age&quot;: 23
+};
+print(context, json.encode(_map))  //输出：{&quot;username&quot;:&quot;张三&quot;,&quot;age&quot;:23}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_8-2-使用http库进行网络请求"><a href="#_8-2-使用http库进行网络请求" class="header-anchor">#</a> 8-2. 使用http库进行网络请求</h3> <ul><li><p>地址：<a href="https://pub.dev/packages/http" target="_blank" rel="noopener noreferrer">https://pub.dev/packages/http<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>使用：</p> <ol><li>在pubspec.yaml文件中的dependencies节点下添加http: ^版本号：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>dependencies:
+http: ^0.12.2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="2"><li>在代码中使用：
+get请求</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>import 'package:http/http.dart';
+
+_onGetData(apiUrl) async{
+  var result = await get(apiUrl);
+  if(result.statusCode == 200) {
+    print(result.body);
+  }else {
+    print('接口请求错误！');
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>post请求</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>_doLogin(context, username, psw, {url = ''}) async {
+  var result = await post(url, body: {'username':username, 'psw':psw});
+  if (result.statusCode == 200) {
+    print(result.body);
+  } else {
+    print('接口请求错误！');
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div></li></ul> <h3 id="_8-3-dio-库请求"><a href="#_8-3-dio-库请求" class="header-anchor">#</a> 8-3. dio 库请求</h3> <div class="custom-block tip"><p class="title"></p><p>dio是一个强大的Dart Http请求库，支持Restful API、FormData、拦截器、请求取消、Cookie管理、文件上传/下载、超时、自定义适配器等...</p></div><ul><li><p>地址：<a href="https://pub.dev/packages/dio" target="_blank" rel="noopener noreferrer">https://pub.dev/packages/dio<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> github地址：<a href="https://github.com/flutterchina/dio" target="_blank" rel="noopener noreferrer">https://github.com/flutterchina/dio<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>使用：</p> <ol><li>在pubspec.yaml文件中的dependencies节点下添加dio: ^版本号：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>dependencies:
+dio: ^3.0.7
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="2"><li>简单使用</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>import 'package:dio/dio.dart';
+void getHttp() async {
+  try {
+    Response response = await Dio().get(&quot;http://www.baidu.com&quot;);
+    print(response);
+  } catch (e) {
+    print(e);
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ol start="3"><li>发起一个 GET 请求 :</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Response response;
+Dio dio = Dio();
+response = await dio.get(&quot;/test?id=12&amp;name=wendu&quot;)
+print(response.data.toString());
+// 请求参数也可以通过对象传递，上面的代码等同于：
+response = await dio.get(&quot;/test&quot;, queryParameters: {&quot;id&quot;: 12, &quot;name&quot;: &quot;wendu&quot;});
+print(response.data.toString());
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ol start="4"><li>发起一个 POST 请求:</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>response = await dio.post(&quot;/test&quot;, data: {&quot;id&quot;: 12, &quot;name&quot;: &quot;wendu&quot;});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="5"><li>发起多个并发请求:</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>response = await Future.wait([dio.post(&quot;/info&quot;), dio.get(&quot;/token&quot;)]);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="6"><li>下载文件:</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>response = await dio.download(&quot;https://www.google.com/&quot;, &quot;./xx.html&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="7"><li>以流的方式接收响应数据：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Response&lt;ResponseBody&gt; rs = await Dio().get&lt;ResponseBody&gt;(url,
+  options: Options(responseType: ResponseType.stream), //设置接收类型为stream
+);
+print(rs.data.stream); //响应流
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="8"><li>以二进制数组的方式接收响应数据：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Response&lt;List&lt;int&gt;&gt; rs = await Dio().get&lt;List&lt;int&gt;&gt;(url,
+options: Options(responseType: ResponseType.bytes), //设置接收类型为bytes
+);
+print(rs.data); //二进制数组
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="9"><li>发送 FormData:</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>FormData formData = FormData.from({
+    &quot;name&quot;: &quot;wendux&quot;,
+    &quot;age&quot;: 25,
+  });
+response = await dio.post(&quot;/info&quot;, data: formData);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ol start="10"><li>通过FormData上传多个文件:</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>FormData.fromMap({
+    &quot;name&quot;: &quot;wendux&quot;,
+    &quot;age&quot;: 25,
+    &quot;file&quot;: await MultipartFile.fromFile(&quot;./text.txt&quot;,filename: &quot;upload.txt&quot;),
+    &quot;files&quot;: [
+      await MultipartFile.fromFile(&quot;./text1.txt&quot;, filename: &quot;text1.txt&quot;),
+      await MultipartFile.fromFile(&quot;./text2.txt&quot;, filename: &quot;text2.txt&quot;),
+    ]
+});
+response = await dio.post(&quot;/info&quot;, data: formData);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ol start="11"><li>监听发送(上传)数据进度:</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>response = await dio.post(
+  &quot;http://www.dtworkroom.com/doris/1/2.0.0/test&quot;,
+  data: {&quot;aa&quot;: &quot;bb&quot; * 22},
+  onSendProgress: (int sent, int total) {
+    print(&quot;$sent $total&quot;);
+  },
+);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ol start="12"><li>以流的形式提交二进制数据：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 二进制数据
+List&lt;int&gt; postData = &lt;int&gt;[...];
+await dio.post(
+  url,
+  data: Stream.fromIterable(postData.map((e) =&gt; [e])), //创建一个Stream&lt;List&lt;int&gt;&gt;
+  options: Options(
+    headers: {
+      Headers.contentLengthHeader: postData.length, // 设置content-length
+    },
+  ),
+);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><strong>注意</strong>：如果要监听提交进度，则必须设置content-length，反之则是可选的。</p></li></ul> <h2 id="九、其他"><a href="#九、其他" class="header-anchor">#</a> 九、其他</h2> <h3 id="_9-1-国际化"><a href="#_9-1-国际化" class="header-anchor">#</a> 9-1. 国际化</h3> <ul><li>第一步：找到pubspec.yaml文件，配置flutter_localizations(国际化)。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>dependencies:
+flutter:
+  sdk: flutter
+
+#国际化配置
+flutter_localizations:
+  sdk: flutter
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>第二步：导入国际化的包flutter_localizations(AS可以自动导包)。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>import 'package:flutter_localizations/flutter_localizations.dart';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>第三步：在main入口中的MaterialApp组件中配置国际化：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>import 'package:flutter/material.dart';
+import 'package:flutter_demo_one/route.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
+void main() =&gt; runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.blue
+      ),
+      initialRoute: '/',
+      onGenerateRoute: generateRoute,
+      
+      //以下是国际化配置,配置下面localizationsDelegates和supportedLocales两个属性即可实现国际化。
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+      supportedLocales: [
+        const Locale('zh', 'CH'),
+        const Locale('en', 'US')
+      ],
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h3 id="_9-2-沉浸式状态栏"><a href="#_9-2-沉浸式状态栏" class="header-anchor">#</a> 9-2. 沉浸式状态栏</h3> <p>只需要在入口处build方法中return前加入下面一行代码，将状态栏的颜色设置为透明色即可：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(statusBarColor: Colors.transparent));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/boke/views/Flutter/flutter.html#介绍" class="sidebar-link reco-side-介绍" data-v-70334359>介绍</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Flutter/flutter.html#一、在macos上搭建flutter开发环境" class="sidebar-link reco-side-一、在macos上搭建flutter开发环境" data-v-70334359>一、在macOS上搭建Flutter开发环境</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Flutter/flutter.html#二、常用快捷键" class="sidebar-link reco-side-二、常用快捷键" data-v-70334359>二、常用快捷键</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Flutter/flutter.html#三、基本widget组件" class="sidebar-link reco-side-三、基本widget组件" data-v-70334359>三、基本Widget组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-1-有状态无状态组件。" class="sidebar-link reco-side-_3-1-有状态无状态组件。" data-v-70334359>3-1 有状态无状态组件。</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-2-装饰组件" class="sidebar-link reco-side-_3-2-装饰组件" data-v-70334359>3-2 装饰组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-3-container-容器组件" class="sidebar-link reco-side-_3-3-container-容器组件" data-v-70334359>3-3 Container 容器组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-4-text-文本组件" class="sidebar-link reco-side-_3-4-text-文本组件" data-v-70334359>3-4. Text 文本组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-5-listview-列表组件" class="sidebar-link reco-side-_3-5-listview-列表组件" data-v-70334359>3-5. ListView 列表组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-6-refreshindicator下拉刷新组件" class="sidebar-link reco-side-_3-6-refreshindicator下拉刷新组件" data-v-70334359>3-6. RefreshIndicator下拉刷新组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-7-gridview" class="sidebar-link reco-side-_3-7-gridview" data-v-70334359>3-7. GridView</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-8-padding-内边距组件" class="sidebar-link reco-side-_3-8-padding-内边距组件" data-v-70334359>3-8. Padding 内边距组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-9-row-水平布局组件" class="sidebar-link reco-side-_3-9-row-水平布局组件" data-v-70334359>3-9. Row 水平布局组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-10-column-垂直布局组件" class="sidebar-link reco-side-_3-10-column-垂直布局组件" data-v-70334359>3-10. Column 垂直布局组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-11-expanded-组件-类似web中的flex布局" class="sidebar-link reco-side-_3-11-expanded-组件-类似web中的flex布局" data-v-70334359>3-11. Expanded 组件，类似Web中的Flex布局</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-12-sizedbox-占位组件" class="sidebar-link reco-side-_3-12-sizedbox-占位组件" data-v-70334359>3-12. SizedBox 占位组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-13-stack-层叠组件" class="sidebar-link reco-side-_3-13-stack-层叠组件" data-v-70334359>3-13. Stack 层叠组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-14-align" class="sidebar-link reco-side-_3-14-align" data-v-70334359>3-14. Align</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-15-positioned" class="sidebar-link reco-side-_3-15-positioned" data-v-70334359>3-15. Positioned</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-16-aspectratio" class="sidebar-link reco-side-_3-16-aspectratio" data-v-70334359>3-16. AspectRatio</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-17-card" class="sidebar-link reco-side-_3-17-card" data-v-70334359>3-17. Card</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-18-circleavatar-原型头像组件" class="sidebar-link reco-side-_3-18-circleavatar-原型头像组件" data-v-70334359>3-18. CircleAvatar 原型头像组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-19-wrap组件-流式布局组件" class="sidebar-link reco-side-_3-19-wrap组件-流式布局组件" data-v-70334359>3-19. Wrap组件(流式布局组件)</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-20-按钮组件。" class="sidebar-link reco-side-_3-20-按钮组件。" data-v-70334359>3-20. 按钮组件。</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-21-chip-碎片组件" class="sidebar-link reco-side-_3-21-chip-碎片组件" data-v-70334359>3-21. Chip 碎片组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-22-bottomnavigationbar-底部导航条组件" class="sidebar-link reco-side-_3-22-bottomnavigationbar-底部导航条组件" data-v-70334359>3-22. BottomNavigationBar 底部导航条组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-23-appbar-导航栏组件" class="sidebar-link reco-side-_3-23-appbar-导航栏组件" data-v-70334359>3-23. AppBar 导航栏组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-24-defaulttabcontroller-组件-实现类似于android中的tablayout效果" class="sidebar-link reco-side-_3-24-defaulttabcontroller-组件-实现类似于android中的tablayout效果" data-v-70334359>3-24. DefaultTabController 组件（实现类似于Android中的TabLayout效果）</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-25-divider-线条组件" class="sidebar-link reco-side-_3-25-divider-线条组件" data-v-70334359>3-25. Divider 线条组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-26-listtile-条目组件" class="sidebar-link reco-side-_3-26-listtile-条目组件" data-v-70334359>3-26. ListTile 条目组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-27-drawer-抽屉组件" class="sidebar-link reco-side-_3-27-drawer-抽屉组件" data-v-70334359>3-27. Drawer 抽屉组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-28-textfield-文本框组件" class="sidebar-link reco-side-_3-28-textfield-文本框组件" data-v-70334359>3-28. TextField 文本框组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-29-checkbox-多选框组件" class="sidebar-link reco-side-_3-29-checkbox-多选框组件" data-v-70334359>3-29. CheckBox 多选框组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-30-checkboxlisttile组件" class="sidebar-link reco-side-_3-30-checkboxlisttile组件" data-v-70334359>3-30. CheckboxListTile组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-31-radio-单选框组件" class="sidebar-link reco-side-_3-31-radio-单选框组件" data-v-70334359>3-31. Radio 单选框组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-32-radiolisttile组件" class="sidebar-link reco-side-_3-32-radiolisttile组件" data-v-70334359>3-32. RadioListTile组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-33-switch-开关组件" class="sidebar-link reco-side-_3-33-switch-开关组件" data-v-70334359>3-33. Switch 开关组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_3-34-日期组件以及日期和时间戳" class="sidebar-link reco-side-_3-34-日期组件以及日期和时间戳" data-v-70334359>3-34. 日期组件以及日期和时间戳</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Flutter/flutter.html#四、第三方组件库" class="sidebar-link reco-side-四、第三方组件库" data-v-70334359>四、第三方组件库</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_4-1-toast-组件" class="sidebar-link reco-side-_4-1-toast-组件" data-v-70334359>4-1. Toast 组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_4-2-swiper-轮播图组件" class="sidebar-link reco-side-_4-2-swiper-轮播图组件" data-v-70334359>4-2. Swiper 轮播图组件</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_4-3-dateformat-日期格式化组件" class="sidebar-link reco-side-_4-3-dateformat-日期格式化组件" data-v-70334359>4-3. DateFormat 日期格式化组件</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Flutter/flutter.html#五、dialog-弹窗" class="sidebar-link reco-side-五、dialog-弹窗" data-v-70334359>五、Dialog 弹窗</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Flutter/flutter.html#六、注解" class="sidebar-link reco-side-六、注解" data-v-70334359>六、注解</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_6-1-override-重写" class="sidebar-link reco-side-_6-1-override-重写" data-v-70334359>6-1. @override 重写</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_6-2-protected" class="sidebar-link reco-side-_6-2-protected" data-v-70334359>6-2. @protected</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_6-3-mustcallsuper" class="sidebar-link reco-side-_6-3-mustcallsuper" data-v-70334359>6-3. @mustCallSuper</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Flutter/flutter.html#七、路由" class="sidebar-link reco-side-七、路由" data-v-70334359>七、路由</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_7-1-普通路由" class="sidebar-link reco-side-_7-1-普通路由" data-v-70334359>7-1. 普通路由</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_7-2-普通路由传值" class="sidebar-link reco-side-_7-2-普通路由传值" data-v-70334359>7-2. 普通路由传值</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_7-3-命名路由" class="sidebar-link reco-side-_7-3-命名路由" data-v-70334359>7-3. 命名路由</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_7-4-命名路由传值" class="sidebar-link reco-side-_7-4-命名路由传值" data-v-70334359>7-4. 命名路由传值</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_7-5-替换路由" class="sidebar-link reco-side-_7-5-替换路由" data-v-70334359>7-5. 替换路由</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Flutter/flutter.html#八、-网络请求" class="sidebar-link reco-side-八、-网络请求" data-v-70334359>八、 网络请求</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_8-1-json-与-map-相互转换。" class="sidebar-link reco-side-_8-1-json-与-map-相互转换。" data-v-70334359>8-1. Json 与 Map 相互转换。</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_8-2-使用http库进行网络请求" class="sidebar-link reco-side-_8-2-使用http库进行网络请求" data-v-70334359>8-2. 使用http库进行网络请求</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_8-3-dio-库请求" class="sidebar-link reco-side-_8-3-dio-库请求" data-v-70334359>8-3. dio 库请求</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Flutter/flutter.html#九、其他" class="sidebar-link reco-side-九、其他" data-v-70334359>九、其他</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_9-1-国际化" class="sidebar-link reco-side-_9-1-国际化" data-v-70334359>9-1. 国际化</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Flutter/flutter.html#_9-2-沉浸式状态栏" class="sidebar-link reco-side-_9-2-沉浸式状态栏" data-v-70334359>9-2. 沉浸式状态栏</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="reco-bgm-panel" data-v-39f9e6e0><audio id="bgm" src="/boke/mp3/1.mp3" data-v-39f9e6e0></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><img src="/boke/images/avatar.png" data-v-39f9e6e0></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><div class="reco-bgm-cover" style="background-image:url(/boke/images/avatar.png);" data-v-39f9e6e0><div class="mini-operation" style="display:none;" data-v-39f9e6e0><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-39f9e6e0></i></div> <div class="falut-message" style="display:none;" data-v-39f9e6e0>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><div class="info-box" data-v-39f9e6e0><i class="reco-bgm reco-bgm-music music" data-v-39f9e6e0></i>哪里都是你</div> <div class="info-box" data-v-39f9e6e0><i class="reco-bgm reco-bgm-artist" data-v-39f9e6e0></i>队长</div> <div class="reco-bgm-progress" data-v-39f9e6e0><div class="progress-bar" data-v-39f9e6e0><div class="bar" data-v-39f9e6e0></div></div></div> <div class="reco-bgm-operation" data-v-39f9e6e0><i class="reco-bgm reco-bgm-last last" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-play play" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-next next" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-39f9e6e0></i> <div class="volume-bar" data-v-39f9e6e0><div class="bar" data-v-39f9e6e0></div></div></div></div> <div class="reco-bgm-left-box" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><i class="reco-bgm reco-bgm-left" data-v-39f9e6e0></i></div></div></div></div></div>
+    <script src="/boke/assets/js/app.5fe2e981.js" defer></script><script src="/boke/assets/js/3.36b99c6d.js" defer></script><script src="/boke/assets/js/1.513908fb.js" defer></script><script src="/boke/assets/js/20.cc390c80.js" defer></script>
+  </body>
+</html>

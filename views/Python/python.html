@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Python学习笔记 | TangCuYu</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/boke/images/favicon.svg">
+    <meta name="description" content="糖醋鱼小屋">
+    
+    <link rel="preload" href="/boke/assets/css/0.styles.af9084c3.css" as="style"><link rel="preload" href="/boke/assets/js/app.5fe2e981.js" as="script"><link rel="preload" href="/boke/assets/js/3.36b99c6d.js" as="script"><link rel="preload" href="/boke/assets/js/1.513908fb.js" as="script"><link rel="preload" href="/boke/assets/js/21.4eda73f8.js" as="script"><link rel="prefetch" href="/boke/assets/js/10.0be7be33.js"><link rel="prefetch" href="/boke/assets/js/11.f6127484.js"><link rel="prefetch" href="/boke/assets/js/12.1b414cd0.js"><link rel="prefetch" href="/boke/assets/js/13.56d17f18.js"><link rel="prefetch" href="/boke/assets/js/14.ec9345d2.js"><link rel="prefetch" href="/boke/assets/js/15.5aa673ea.js"><link rel="prefetch" href="/boke/assets/js/16.41d09f08.js"><link rel="prefetch" href="/boke/assets/js/17.2c74426d.js"><link rel="prefetch" href="/boke/assets/js/18.ee16ff5a.js"><link rel="prefetch" href="/boke/assets/js/19.83505301.js"><link rel="prefetch" href="/boke/assets/js/20.cc390c80.js"><link rel="prefetch" href="/boke/assets/js/22.e197fd26.js"><link rel="prefetch" href="/boke/assets/js/23.c7945f14.js"><link rel="prefetch" href="/boke/assets/js/24.98762381.js"><link rel="prefetch" href="/boke/assets/js/4.462cc581.js"><link rel="prefetch" href="/boke/assets/js/5.79702b34.js"><link rel="prefetch" href="/boke/assets/js/6.b3dd6d18.js"><link rel="prefetch" href="/boke/assets/js/7.aa256593.js"><link rel="prefetch" href="/boke/assets/js/8.02431d99.js"><link rel="prefetch" href="/boke/assets/js/9.ff85b874.js">
+    <link rel="stylesheet" href="/boke/assets/css/0.styles.af9084c3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>TangCuYu</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>糖醋鱼小屋</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>TangCuYu</span>
+            
+          <span data-v-4e82dffc>2020 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/boke/" class="home-link router-link-active"><img src="/boke/images/favicon.svg" alt="TangCuYu" class="logo"> <span class="site-name">TangCuYu</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/boke/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/boke/categories/Css/" class="nav-link"><i class="undefined"></i>
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Flutter/" class="nav-link"><i class="undefined"></i>
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Koa2/" class="nav-link"><i class="undefined"></i>
+  Koa2
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Python/" class="nav-link"><i class="undefined"></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/React/" class="nav-link"><i class="undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/TypeScript/" class="nav-link"><i class="undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/NLP/" class="nav-link"><i class="undefined"></i>
+  NLP
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Shell/" class="nav-link"><i class="undefined"></i>
+  Shell
+</a></li></ul></div></div><div class="nav-item"><a href="/boke/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      工具箱
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ps.gaoding.com/#/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  在线PS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://uigradients.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  渐变色
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://tinypng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  图片压缩
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://unbug.github.io/codelf/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  变量命名
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.remove.bg/zh" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  消除图片背景
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://cli.im/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  生成二维码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/p/173b4f93b042" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Es6基础语法
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/p/8034d28b0210" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  数据结构 V：1.3.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/boke/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/boke/views/others/message.html" class="nav-link"><i class="iconfont reco-message"></i>
+  留言板
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/boke/views/About/author.html" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/50ce9c5b2638" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/liheng0117" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/li_heng_0117" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mayun"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/boke/images/tx.JPG" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    TangCuYu
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>12</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>13</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/boke/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/boke/categories/Css/" class="nav-link"><i class="undefined"></i>
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Flutter/" class="nav-link"><i class="undefined"></i>
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Koa2/" class="nav-link"><i class="undefined"></i>
+  Koa2
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Python/" class="nav-link"><i class="undefined"></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/React/" class="nav-link"><i class="undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/TypeScript/" class="nav-link"><i class="undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/NLP/" class="nav-link"><i class="undefined"></i>
+  NLP
+</a></li><li class="dropdown-item"><!----> <a href="/boke/categories/Shell/" class="nav-link"><i class="undefined"></i>
+  Shell
+</a></li></ul></div></div><div class="nav-item"><a href="/boke/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      工具箱
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ps.gaoding.com/#/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  在线PS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://uigradients.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  渐变色
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://tinypng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  图片压缩
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://unbug.github.io/codelf/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  变量命名
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.remove.bg/zh" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  消除图片背景
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://cli.im/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  生成二维码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/p/173b4f93b042" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Es6基础语法
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/p/8034d28b0210" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  数据结构 V：1.3.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/boke/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/boke/views/others/message.html" class="nav-link"><i class="iconfont reco-message"></i>
+  留言板
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/boke/views/About/author.html" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/50ce9c5b2638" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/liheng0117" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/li_heng_0117" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mayun"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>Python学习笔记</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>TangCuYu</span>
+            
+          <span data-v-4e82dffc>2020 - </span>
+          2021
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">Python学习笔记</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>TangCuYu</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>7/27/2021</span></i> <i class="iconfont reco-eye" data-v-1ff7123e><span id="/boke/views/Python/python.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-1ff7123e><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>Python</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h2> <div class="custom-block tip"><p class="title"></p><p>Python由荷兰数学和计算机科学研究学会的Guido van Rossum 于1990 年代初设计，作为一门叫做ABC语言的替代品。 Python提供了高效的高级数据结构，还能简单有效地面向对象编程。Python语法和动态类型，以及解释型语言的本质，使它成为多数平台上写脚本和快速开发应用的编程语言， 随着版本的不断更新和语言新功能的添加，逐渐被用于独立的、大型项目的开发。</p> <p>Python解释器易于扩展，可以使用C或C++（或者其他可以通过C调用的语言）扩展新的功能和数据类型。 Python 也可用于可定制化软件中的扩展程序语言。Python丰富的标准库，提供了适用于各个主要系统平台的源码或机器码。</p></div><h2 id="一、python基础数据类型"><a href="#一、python基础数据类型" class="header-anchor">#</a> 一、Python基础数据类型</h2> <h3 id="_1-1-整数"><a href="#_1-1-整数" class="header-anchor">#</a> 1.1 整数</h3> <p>整数和我们生活中定义的整数是一个概念，例如：1,2,3,10,100,1000,-1000 等等，都是整数，Python可以处理任意大小的整数。</p> <p>对于整数，除了生活中常用的十进制以外，计算机由于使用二进制，所以，在计算机中也常用二进制或者十六进制表示整数。相比十进制数，在Python中使用以下方式表示二进制数和十六进制数。</p> <p>二进制数只使用数字0、1表示，在Python中，二进制整数使用前缀0b表示，比如：0b0110，0b1100。</p> <p>十六进制数除了0~9十个数字以外，还使用a、b、c、d、e、f，在Python中，十六进制使用前缀0x，比如：0x12ef，0xde2431af。</p> <p>十进制数、二进制数和十六进制数之间是可以相互转换的，如果感兴趣的同学，可以学习《编程必备基础知识》了解更多转换的细节。</p> <h3 id="_1-2-浮点数"><a href="#_1-2-浮点数" class="header-anchor">#</a> 1.2 浮点数</h3> <p>浮点数对应我们生活的是小数，例如：0.1,0.5, 12.34, 3.1415926等，都是浮点数。</p> <p>为什么小数在计算机领域被称为浮点数呢？这是因为按照科学记数法表示时，一个浮点数的小数点位置是可变的（浮动的），比如，1.23x10^9和12.3x10^8是相等的，因此称为浮点数。</p> <p>浮点数可以用数学写法，如1.23，3.14，-9.01。但是对于很大或很小的浮点数，就必须用科学计数法表示，在Python中，把10用e替代，比如：1.23x10^9就是1.23e9，或者12.3e8，0.000012可以写成1.2e-5，同学可以自行举出更多的例子。</p> <p>这里有必要提醒一点就是，整数和浮点数在计算机内部存储的方式是不同的，整数运算永远是精确的，而浮点数运算则可能会有四舍五入的误差，如何检验，可以在Python终端中输入以下内容0.1 + 0.2，看看可以得到你期望的结果0.3吗？真实结果可能让你失望了。</p> <p>同样的，这里涉及的原理同学也可以学习上面提到的课程进行进一步原理层面的理解。</p> <h3 id="_1-3-字符串"><a href="#_1-3-字符串" class="header-anchor">#</a> 1.3 字符串</h3> <p>字符串对应生活中的就是非数字类型的内容，比如一个句子，一段话，在Python中就是字符串，在Python中，字符串是以''或&quot;&quot;括起来的任意文本，比如'abc'，&quot;xyz&quot;等等。请注意，''或&quot;&quot;本身只是一种表示方式，不是字符串的一部分，因此，字符串'abc'只有a，b，c这3个字符。</p> <p>比如之前练习过的第一个Python程序：print('Hello World')，其中的Hello World就是字符串。</p> <h3 id="_1-4-布尔值"><a href="#_1-4-布尔值" class="header-anchor">#</a> 1.4 布尔值</h3> <p>布尔值对应于生活中的就是对和错，在计算机的世界里，大部分判断都是非错则对的，布尔值和布尔代数的表示完全一致，一个布尔值只有True、False两种值，要么是True，要么是False，在Python中，可以直接用True、False表示布尔值（请注意大小写，不需要使用字符串符号括起来），也可以通过布尔运算计算出来。</p> <p>布尔值可以用and、or和not运算（注意and,or,not都是Python语言本身的关键字）。</p> <p>and运算是与运算，只有所有都为 True，and运算结果才是 True。</p> <p>or运算是或运算，只要其中有一个为 True，or 运算结果就是 True。</p> <p>not运算是非运算，它是一个单目运算符，把 True 变成 False，False 变成 True。</p> <h3 id="_1-5-空值"><a href="#_1-5-空值" class="header-anchor">#</a> 1.5 空值</h3> <p>空值是Python里一个特殊的值，用None表示。</p> <p>注意，None和0是不一样的，None不能理解为0，因为0是有意义的，比如我有0个苹果表示我没有苹果，0表达的是数值0的意思，而不能表示为我有None个苹果，None是一个特殊的空值。</p> <h2 id="二、python定义变量的方法"><a href="#二、python定义变量的方法" class="header-anchor">#</a> 二、Python定义变量的方法</h2> <h3 id="_2-1-什么是变量"><a href="#_2-1-什么是变量" class="header-anchor">#</a> 2.1 什么是变量</h3> <p>在Python中，变量的概念基本上和初中代数的方程变量是一致的。例如，对于方程式 y=x*x ，x就是变量。当x=2时，计算结果是4，当x=5时，计算结果是25。</p> <h3 id="_2-1-合法的变量名"><a href="#_2-1-合法的变量名" class="header-anchor">#</a> 2.1 合法的变量名</h3> <p>只是在计算机程序中，变量不仅可以是数字，还可以是任意数据类型（字符串、布尔值、空值、字典等）。在Python中，定义一个变量需要遵循一定的约束，否则，Python可能识别不出它是一个变量。</p> <p>变量名由大小写英文字母、数字和下划线_组成
+变量不能用数字开头
+变量尽量不要和Python关键字重合（比如前面学习过的：and、or、not，否则可能导致Python原有关键字发挥不出作用）
+以下这些变量的定义都是合法的。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>num, count, _none, min_value
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>他们都满足上面的三个条件。</p> <p>以下这些变量的定义都是不合法的。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>1num, 666, 1_cd, and
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_2-1-定义变量"><a href="#_2-1-定义变量" class="header-anchor">#</a> 2.1 定义变量</h3> <p>定义变量的方式很简单，通过变量名 = 数据，即可定义一个变量。
+举个例子：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>a = 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在这个例子里面，a就是变量，它的值是一个整数1。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>hello = 'Hello'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在这个例子里面，hello就是变量，它的值是一个字符串'Hello'。
+在Python里面，一个变量可以先后存储多种不同类型的数据。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>a = 1 # 这个时候a存储的是整数类型
+print(a)
+a = 'ABC' # 这个时候a存储的是字符串类型
+print(a)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>这是Python这类语言特有的特性，我们称之为动态语言，与之对应的是静态语言，Python、Javascript等等都是动态语言，Java、C、C++等等属于静态语言。</p> <h2 id="三、python的整数与浮点数"><a href="#三、python的整数与浮点数" class="header-anchor">#</a> 三、Python的整数与浮点数</h2> <div class="custom-block tip"><p class="title"></p><p>在Python中，整数和浮点数虽然属于不同的数值类型，但是在运算上是可以一起运算的，这从生活经验出发，也是可以理解的。</p></div><h3 id="_3-1-四则运算"><a href="#_3-1-四则运算" class="header-anchor">#</a> 3.1 四则运算</h3> <p>整数、浮点数可以直接进行四则运算。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 加法
+num1 = 10
+num2 = 0.5
+result = num1 + num2
+print(result) # ==&gt; 10.5
+# 减法
+result = num1 - num2
+print(result) # ==&gt; 9.5
+# 乘法
+result = num1 * num2
+print(result) # ==&gt; 5.0
+# 除法
+result = num1 / num2
+print(result) # ==&gt;20.0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>从上面可以发现一个规律，整数和浮点数运算后 ，得到的结果不管小数点后是否有值，结果都变成浮点数了，这是合理的，浮点数可以表达整数的结果，但是整数不能表达浮点数的结果。</p> <p><strong>注意：在Python2使用除法可能和Python3得到不一样的结果</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code># python2
+num1 = 10
+num2 = 3
+result = num1 / num2
+print(result) # ==&gt; 3
+# python3
+num1 = 10
+num2 = 3
+result = num1 / num2
+print(result) # ==&gt; 3.3333333333333335
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>可以看到在python2，得到的是一个整数的结果，这是因为除数和被除数都是整数时，得到的结果也默认保存为整数了，这是非常不科学的，因此在python3，改进了这一点。</p> <h3 id="_3-2-取模运算"><a href="#_3-2-取模运算" class="header-anchor">#</a> 3.2 取模运算</h3> <p>Python数字支持取模运算，使用百分号<kbd>%</kbd>表示取模。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>print(3 % 2) # ==&gt; 1
+print(33 % 10) # ==&gt; 3
+print(99 % 30) # ==&gt; 9
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>恰当使用取模运算，可以判断一个数是否为偶数，当一个数对2取模结果为0时，则这个数为偶数，否则为奇数。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>print(3 % 2) # ==&gt; 1 因此3为奇数
+print(33 % 2) # ==&gt; 1 因此33为奇数
+print(100 % 2) # ==&gt; 0 因此100为偶数
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_3-3-地板除"><a href="#_3-3-地板除" class="header-anchor">#</a> 3.3 地板除</h3> <p>Python除了普通除法以外，还有一个特殊的除法被称为<kbd>地板除</kbd>，对于<kbd>地板除</kbd>，得到的结果会忽略纯小数的部分，得到整数的部分，地板除使用<kbd>//</kbd>进行。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>10//4 # ==&gt; 2
+10//2.5 # ==&gt; 4.0
+10//3 # ==&gt; 3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_3-4-小数点位数"><a href="#_3-4-小数点位数" class="header-anchor">#</a> 3.4 小数点位数</h3> <p>使用Python计算小数的时候，经常需要保留小数点后若干位，可以使用round()函数来处理，这里先了解round的调用方式，使用两个参数，第一个是需要保留小数点位数的数值，第二个是保留的位数。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>num = 10 / 3
+print(num) # ==&gt; 3.3333333333333335
+# 使用round保留两位小数
+round(num, 2) # ==&gt; 3.33
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="四、python的布尔类型"><a href="#四、python的布尔类型" class="header-anchor">#</a> 四、Python的布尔类型</h2> <div class="custom-block tip"><p class="title"></p><p>布尔类型是Python的基础数据类型，布尔类型只有True和False两种值</p></div><h3 id="_4-1-与运算"><a href="#_4-1-与运算" class="header-anchor">#</a> 4.1 与运算</h3> <p>只有两个布尔值都为 True 时，计算结果才为 True。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>True and True # ==&gt; True
+True and False # ==&gt; False
+False and True # ==&gt; False
+False and False # ==&gt; False
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_4-2-或运算"><a href="#_4-2-或运算" class="header-anchor">#</a> 4.2 或运算</h3> <p>只要有一个布尔值为 True，计算结果就是 True。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>True or True # ==&gt; True
+True or False # ==&gt; True
+False or True # ==&gt; True
+False or False # ==&gt; False
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_4-3-非运算"><a href="#_4-3-非运算" class="header-anchor">#</a> 4.3 非运算</h3> <p>把True变为False，或者把False变为True：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>not True # ==&gt; False
+not False # ==&gt; True
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>计算机程序是由无数的逻辑分支组成的，通过布尔运算，可以在计算机中实现条件判断，根据计算结果为True或者False，计算机可以自动执行不同的后续代码，因此布尔运算也是非常有必要的。</p> <p>在Python中，布尔类型还可以与其他数据类型（字符串，数字等）做 and、or和not运算，请看下面的代码：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>a = True
+print(a and 0 or 99) # ==&gt; 99
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>得到的计算结果不是布尔类型，而是数字99，这是为什么呢？</p> <p>因为Python把0、空字符串和None看成False，其他数值和非空字符串都看成True，所以：</p> <p><kbd>True and 0</kbd>计算结果是0
+继续计算<kbd>0 or 99</kbd>计算结果是 99
+因此，结果是99。
+需要注意的是，not计算的优先级是高于and和or的。</p> <p><kbd>True and not False # ==&gt; True</kbd>
+在上述布尔计算中，先计算<kbd>not False = True</kbd>，然后再计算<kbd>True and True</kbd>，因此得到True的结果。</p> <h3 id="_4-4-短路计算"><a href="#_4-4-短路计算" class="header-anchor">#</a> 4.4 短路计算</h3> <ol><li>在计算 <kbd>a and b</kbd> 时，如果 a 是 False，则根据与运算法则，整个结果必定为 False，因此返回 a；如果 a 是 True，则整个计算结果必定取决与 b，因此返回 b。</li> <li>在计算 <kbd>a or b</kbd> 时，如果 a 是 True，则根据或运算法则，整个计算结果必定为 True，因此返回 a；如果 a 是 False，则整个计算结果必定取决于 b，因此返回 b。</li></ol> <p>Python解释器在做布尔运算时，只要能提前确定计算结果，它就不会往后算了，直接返回结果。</p> <h2 id="五、python的字符串"><a href="#五、python的字符串" class="header-anchor">#</a> 五、Python的字符串</h2> <p>字符串可以用' '或者&quot; &quot;括起来表示。</p> <p>如果字符串本身包含'怎么办？比如我们要表示字符串 I'm OK ，这时，可以用&quot; &quot;括起来表示：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;I'm OK&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>类似的，如果字符串包含&quot;，我们就可以用' '括起来表示：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>'Learn &quot;Python&quot; in imooc'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如果字符串既包含'又包含&quot;</p> <p>这个时候，就需要对字符串中的某些特殊字符进行“转义”，Python字符串用\进行转义。</p> <p>要表示字符串Bob said &quot;I'm OK&quot;</p> <p>由于'和&quot;会引起歧义，因此，我们在它前面插入一个\表示这是一个普通字符，不代表字符串的起始，因此，这个字符串又可以表示为</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>'Bob said \&quot;I\'m OK\&quot;.'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>注意：转义字符 \不计入字符串的内容中。</strong></p> <p>常用的转义字符还有：</p> <p><kbd> \n </kbd> 表示换行</p> <p><kbd> \t </kbd> 表示一个制表符</p> <p><kbd> \ </kbd> 表示 <kbd> \ </kbd> 字符本身</p> <h3 id="_5-1-raw字符串与多行字符串"><a href="#_5-1-raw字符串与多行字符串" class="header-anchor">#</a> 5.1 raw字符串与多行字符串</h3> <p>如果一个字符串包含很多需要转义的字符，对每一个字符都进行转义会很麻烦。为了避免这种情况，我们可以在字符串前面加个前缀r，表示这是一个 raw 字符串，里面的字符就不需要转义了。例如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>r'\(~_~)/ \(~_~)/'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>但是r'...'表示法不能表示多行字符串，也不能表示包含'和 &quot;的字符串。</p> <p>如果要表示多行字符串，可以用'''...'''表示：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>'''Line 1
+Line 2
+Line 3'''
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>上面这个字符串的表示方法和下面的是完全一样的：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>'Line 1\nLine 2\nLine 3'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>还可以在多行字符串前面添加r，把这个多行字符串也变成一个raw字符串：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>r'''Python is created by &quot;Guido&quot;.
+It is free and easy to learn.
+Let's start learn Python in imooc!'''
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_5-2-字符串format"><a href="#_5-2-字符串format" class="header-anchor">#</a> 5.2 字符串format</h3> <div class="custom-block tip"><p class="title"></p><p>字符串format由两个部分组成，字符串模板和模板数据内容组成，通过大括号{}，就可以把模板数据内容嵌到字符串模板对应的位置。</p></div><div class="language- line-numbers-mode"><pre class="language-text"><code># 字符串模板
+template = 'Hello {}'
+# 模板数据内容
+world = 'World'
+result = template.format(world)
+print(result) # ==&gt; Hello World
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>如果模板中{}比较多，则容易错乱，那么在format的时候也可以指定模板数据内容的顺序。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 指定顺序
+template = 'Hello {0}, Hello {1}, Hello {2}, Hello {3}.'
+result = template.format('World', 'China', 'Beijing', 'imooc')
+print(result) # ==&gt; Hello World, Hello China, Hello Beijing, Hello imooc.
+# 调整顺序
+template = 'Hello {3}, Hello {2}, Hello {1}, Hello {0}.'
+result = template.format('World', 'China', 'Beijing', 'imooc')
+print(result) # ==&gt; Hello imooc, Hello Beijing, Hello China, Hello World.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>除了使用顺序，还可以指定对应的名字，使得在format过程更加清晰。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 指定{}的名字w,c,b,i
+template = 'Hello {w}, Hello {c}, Hello {b}, Hello {i}.'
+world = 'World'
+china = 'China'
+beijing = 'Beijing'
+imooc = 'imooc'
+# 指定名字对应的模板数据内容
+result = template.format(w = world, c = china, b = beijing, i = imooc)
+print(result) # ==&gt; Hello World, Hello China, Hello Beijing, Hello imooc.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="_5-3-字符串编码"><a href="#_5-3-字符串编码" class="header-anchor">#</a> 5.3 字符串编码</h3> <p><strong>为什么有编码问题</strong></p> <p>因为计算机只能处理数字，如果要处理文本，就必须先把文本转换为数字才能处理。最早的计算机在设计时采用8个比特（bit）作为一个字节（byte），所以，一个字节能表示的最大的整数就是255（二进制11111111=十进制255），0 - 255被用来表示大小写英文字母、数字和一些符号，这种编码方式被称为ASCII编码，比如大写字母 A 的编码是65，小写字母 z 的编码是122。
+如果要表示中文，显然一个字节是不够的，至少需要两个字节，而且还不能和ASCII编码冲突，所以，中国制定了GB2312编码，用来把中文编进去。
+类似的，日文和韩文等其他语言也有这个问题。为了统一所有文字的编码，Unicode应运而生。Unicode把所有语言都统一到一套编码里，这样就不会再有乱码问题了。
+Unicode通常用两个字节表示一个字符，原有的英文编码从单字节变成双字节，只需要把高字节全部填为0就可以。</p> <p><strong>python3的编码</strong></p> <p>在python3中，默认使用UTF-8 Unicode来进行编码，因此我们可以在python中输入任意形式的Unicode字符串，都不会遇到像python2中遇到的问题（在python2中，需要显式指明该字符串是Unicode字符串），如果没有了解过python2，则完全可以忽略这一点，python3提供了更加简单易懂的编码方式。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>s1 = '这是中文字符串'
+s2 = 'this is an English string'
+print(s1)
+print(s2)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>在python3中，中文字符串和英文字符串无异。</p> <h3 id="_5-4-字符串切片"><a href="#_5-4-字符串切片" class="header-anchor">#</a> 5.4 字符串切片</h3> <p>字符串由一个个字符组成，每一个字符都有一个唯一的位置。比如字符串'ABC'，第一个字符是A，第二个字符是B，第三个字符是C。
+因此我们可以使用位置的方式取出字符串中特定位置的字符，按照位置取字符串的方式使用中括号[]访问，这个时候可以把字符串看作是一个列表，不过需要注意的是，在程序的世界中，计数是从0开始的，使用0来表示第一个。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>s = 'ABC'
+a = s[0] # 第一个
+b = s[1] # 第二个
+c = s[2] # 第三个
+print(a) # ==&gt; A
+print(b) # ==&gt; B
+print(c) # ==&gt; C
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>有时候，我们会想获取字符串的一部分（子串），这个时候我们采取切片的方式获取，切片需要在中括号[]中填入两个数字，中间用冒号分开，表示子串的开始位置和结束位置，并且这是半闭半开区间，不包括最后的位置。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ab = s[0:2] # 取字符串s中的第一个字符到第三个字符，不包括第三个字符
+print(ab) # ==&gt; AB
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>s = 'ABCDEFGHIJK'
+abcd = s[0:4] # 取字符串s中的第一个字符到第五个字符，不包括第五个字符
+print(abcd) # ==&gt; ABCD
+cdef = s[2:6] # 取字符串s中的第三个字符到第七个字符，不包括第七个字符
+print(cdef) # ==&gt; CDEF
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="六、python的控制流程"><a href="#六、python的控制流程" class="header-anchor">#</a> 六、Python的控制流程</h2> <h3 id="_6-1-if-else-语句"><a href="#_6-1-if-else-语句" class="header-anchor">#</a> 6.1 if else 语句</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>score = 59
+if score &lt; 60:
+    print('抱歉，考试不及格')
+else:
+    print('恭喜你，考试及格')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>这里，因为 score = 59 &lt; 60，所以if的判断是True，因此就会执行print('抱歉，考试不及格')。</p> <ol><li><p>可以看到print('抱歉，考试不及格')这行代码明显比上一行代码缩进了，这是因为这行代码是if判断的一个子分支，因此需要缩进，在Python规范中，一般使用4个空格作为缩进</p></li> <li><p>在if语句的最后，有一个冒号:，这是条件分支判断的格式，在最后加入冒号:，表示接下来是分支代码块</p></li></ol> <h3 id="_6-2-for循环"><a href="#_6-2-for循环" class="header-anchor">#</a> 6.2 for循环</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>s = 'ABCD'
+for ch in s:
+    print(ch) # 注意缩进
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>在上述代码中，ch是在for循环中定义的，意思是把字符串s中的每一个元素依次赋值给ch，然后再把ch打印出来，直到打印出字符串s的最后一个字符为止。</p> <h3 id="_6-3-while循环"><a href="#_6-3-while循环" class="header-anchor">#</a> 6.3 while循环</h3> <p>判断while循环的条件是否为True即可，当条件为True时，即继续运行下去</p> <p>比如计算1~100的和。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>num = 1
+sum = 0
+while num &lt;= 100:
+    sum = sum + num # 注意缩进
+    num = num + 1 # 注意缩进
+print(sum) # ==&gt; 5050
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong>用 for 循环或者 while 循环时，如果要在循环体内直接退出循环，可以使用 break 语句。continue 是可以控制循环继续下去，并跳过continue后面的逻辑</strong></p> <h2 id="七、-python的list容器"><a href="#七、-python的list容器" class="header-anchor">#</a> 七、 Python的List容器</h2> <p>列表(list)是一种有序的容器，放入list中的元素，将会按照一定顺序排列。构造list的方法非常简单，使用中括号[]把需要放在容器里面的元素括起来，就定义了一个列表。</p> <p>比如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>scores = [45, 60, 75, 86, 49, 100]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>list可以放入数字、字符串等数据类型，list不对放入其中的类型进行判断，也就是说，list可以同时放入任意类型的数据</p> <h3 id="_7-1-向list添加新的元素"><a href="#_7-1-向list添加新的元素" class="header-anchor">#</a> 7.1 向list添加新的元素</h3> <ol><li>用append()方法，把新同学追加到列表的末尾：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>names = ['Alice', 'Bob', 'David', 'Ellena']
+names.append('Candy')
+print(names) # ==&gt; ['Alice', 'Bob', 'David', 'Ellena', 'Candy']
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>注意，append()方法总是将元素添加到list的尾部。</strong></p> <ol start="2"><li>list的insert()方法，insert()方法和append()方法不一样，insert()方法需要两个参数，分别是需要插入的位置，以及需要插入的元素。</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>names = ['Alice', 'Bob', 'David', 'Ellena']
+names.insert(2, 'Candy')
+print(names) # ==&gt; ['Alice', 'Bob', 'Candy', 'David', 'Ellena']
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>注意，将Candy插入到第三的位置之后，原来的名字，都将自动往后移动一位，这个时候再使用相同的索引获取后面的元素，将会得到不一样的结果</strong></p> <h3 id="_7-2-从list删除元素"><a href="#_7-2-从list删除元素" class="header-anchor">#</a> 7.2 从list删除元素</h3> <p>pop()方法默认删除列表的最后一个元素，并返回。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>L = ['Alice', 'Bob', 'Candy', 'David', 'Ellena']
+name = L.pop()
+print(name) # ==&gt; Ellena
+print(L) # ==&gt; L = ['Alice', 'Bob', 'Candy', 'David']
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>pop()还可以接收一个参数，指定需要删除的元素的位置。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>L = ['Alice', 'Bob', 'Candy', 'David', 'Ellena']
+name = L.pop(2)
+print(name) # ==&gt; Candy
+print(L) # ==&gt; ['Alice', 'Bob', 'David', 'Ellena']
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="八、python的tuple容器"><a href="#八、python的tuple容器" class="header-anchor">#</a> 八、Python的tuple容器</h2> <div class="custom-block tip"><p class="title"></p><p>元组(tuple)和list一样，也是一个有序容器，在元组中，同样可以包含0个或者多个元素，并且也支持索引访问、切片等操作。定义元组的方式是使用小括号()将元组内的元素括起来。</p></div><p>比如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>T = ('Alice', 'Bob', 'Candy', 'David', 'Ellena')
+# 通过下标的方式访问元素
+print(T[0]) # ==&gt; Alice
+print(T[4]) # ==&gt; Ellena
+# 切片
+print(T[1:3]) # ==&gt; ('Bob', 'Candy')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>元组数据类型可以把不是元组的容器转换为元组，比如将列表转换成元组。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>L = ['Alice', 'Bob', 'Candy', 'David', 'Ellena']
+print(L) # ==&gt; ['Alice', 'Bob', 'Candy', 'David', 'Ellena']
+T = tuple(L)
+print(T) # ==&gt; ('Alice', 'Bob', 'Candy', 'David', 'Ellena')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>同样的，对于列表数据类型，也可以把元组转换成列表。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>T = ('Alice', 'Bob', 'Candy', 'David', 'Ellena')
+print(T) # ==&gt; ('Alice', 'Bob', 'Candy', 'David', 'Ellena')
+L = list(T)
+print(L) # ==&gt; ['Alice', 'Bob', 'Candy', 'David', 'Ellena']
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>但是，tuple和list不一样的是，<strong>tuple是固定不变的，一旦变成tuple，tuple中的每一个元素都不可被改变，同时也不能再往tuple中添加数据，而list是可以的。</strong>
+元组(tuple)的这个特性是非常重要的，在运行上tuple的性能是list的数倍。</p> <p>由于tuple一旦定义之后便不可修改，所以在实际编程中，tuple经常用于存放固定不变的数据。
+因此在使用上，tuple提供了便捷的方法可以访问tuple中的数据。</p> <h3 id="_8-1-count-方法"><a href="#_8-1-count-方法" class="header-anchor">#</a> 8.1 count()方法</h3> <p>count()方法用来统计tuple中某个元素出现的次数。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>T = (1, 1, 2, 2, 3, 3, 1, 3, 5, 7, 9)
+print(T.count(1)) # ==&gt; 3
+print(T.count(5)) # ==&gt; 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>对于不存在的元素，count方法不会报错，而是返回0，这是合理的，因为元组里面有0个不存在的元素。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>T = (1, 1, 2, 2, 3, 3, 1, 3, 5, 7, 9)
+print(T.count(10)) # ==&gt; 0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_8-2-index-方法"><a href="#_8-2-index-方法" class="header-anchor">#</a> 8.2 index()方法</h3> <p>index()方法可以返回指定元素的下标，当一个元素多次重复出现时，则返回第一次出现的下标位置。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>T = (1, 1, 2, 2, 3, 3, 1, 3, 5, 7, 9)
+T.index(9) # ==&gt; 10
+T.index(5) # ==&gt; 8
+T.index(1) # ==&gt; 0 # 多次出现，返回第一次出现的位置
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>注意，index()方法和count()方法不一样，当指定的元素不存在时，使用index()方法Python会报错。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>T = (1, 1, 2, 2, 3, 3, 1, 3, 5, 7, 9)
+T.index(100)
+# 报错
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ValueError: tuple.index(x): x not in tuple
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="_8-3-创建单个元素的tuple"><a href="#_8-3-创建单个元素的tuple" class="header-anchor">#</a> 8.3 创建单个元素的tuple</h3> <p>tuple和list一样，可以包含 0 个、1个和任意多个元素。
+包含多个元素的 tuple，前面我们已经创建过了。</p> <p>包含 0 个元素的 tuple，也就是空tuple，直接用()表示：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>T = ()
+print(T) # ==&gt; ()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>接着，我们创建包含一个元素的tuple。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>T = (1)
+print(T) # ==&gt; 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>这和我们期望的输出有些差异，为什么包含一个元素的元组打印出来之后没有小括号，而是只有一个数字1呢？
+回顾一下前面数字的四则运算。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>result = 3 * 4 - 2
+print(result) # ==&gt; 10
+# 改变优先级，先运算减法
+result = 3 * (4 - 2)
+print(result) # ==&gt; 6
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>可以看到，改变优先级我们是通过()来实现的，这和元组的定义有冲突，这就解释了前面只有一个元素的元组，为什么打印出来却得到一个数字的结果了。
+因为()既可以表示tuple，又可以作为括号表示运算时的优先级，结果(1)被Python解释器计算出结果 1，导致我们得到的不是tuple，而是整数 1。
+因此，要定义只有一个元素的tuple，需要在元素后面添加一个逗号,。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>T = (1, )
+print(T) # ==&gt; (1, )
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>而对于多个元素的tuple，则加和不加这个逗号，效果是一样的。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&gt;&gt;&gt; T = (1, 2, 3,)
+&gt;&gt;&gt; print(T) # ==&gt; (1, 2, 3)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="九、-python的dict容器"><a href="#九、-python的dict容器" class="header-anchor">#</a> 九、 Python的Dict容器</h2> <p>dict的定义如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>d = {
+    'Alice': 45,
+    'Bob': 60,
+    'Candy': 75,
+    'David': 86,
+    'Ellena': 49
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>在定义里，我们使用花括号{}表示这是一个dict，然后key和value之间使用冒号:分割，并且每一组key:value的最后，以逗号,表示这一组的结束。
+我们也可以使用以下的方式定义一个dict。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>d = dict()
+print(d) # ==&gt; {}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>不过这种定义方式，默认得到的是一个空dict，需要调用函数往里面添加数据</p> <h3 id="_9-1-读取dict元素"><a href="#_9-1-读取dict元素" class="header-anchor">#</a> 9.1 读取dict元素</h3> <p>通过 d[ key ] 的形式，就可以得到对应的value。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>d = {
+    'Alice': 45,
+    'Bob': 60,
+    'Candy': 75,
+    'David': 86,
+    'Ellena': 49,
+    'Gaven': 86
+}
+print(d['Bob']) # ==&gt; 60
+print(d['Alice']) # ==&gt; 45
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="_9-2-添加dict元素"><a href="#_9-2-添加dict元素" class="header-anchor">#</a> 9.2 添加dict元素</h3> <p>使用赋值语句往里面添加元素：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>d['Mimi'] = 72
+d['Dodo'] = 88
+print(d)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>当key不存在时，往dict中添加对应的key: value元素。</li> <li>当key存在时，会更新dict，用新的value替换原来的value。</li></ul> <h3 id="_9-3-删除dict元素"><a href="#_9-3-删除dict元素" class="header-anchor">#</a> 9.3 删除dict元素</h3> <p>需要把Alice的成绩删除，可以这样写：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>d = {
+    'Alice': 45,
+    'Bob': 60,
+    'Candy': 75,
+    'David': 86,
+    'Ellena': 49
+}
+print(d) # ==&gt; {'Alice': 45, 'Bob': 60, 'Candy': 75, 'David': 86, 'Ellena': 49}
+alice_score= d.pop('Alice')
+print(alice_score) # ==&gt; 45
+print(d) # ==&gt; {'Bob': 60, 'Candy': 75, 'David': 86, 'Ellena': 49}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>需要注意的是，pop()方法的参数是dict中的key，当key不存在时，同样会引起错误。比如在上述操作中，已经把Alice的成绩删除了，假如再次pop('Alice')，将会引发错误。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>d.pop('Alice')
+# 报错
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+KeyError: 'Alice'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_9-4-dict的特点与方法"><a href="#_9-4-dict的特点与方法" class="header-anchor">#</a> 9.4 dict的特点与方法</h3> <p><strong>1. 查找速度快</strong></p> <p>无论dict有10个元素还是10万个元素，查找速度都一样。而list的查找速度随着元素增加而逐渐下降。</p> <p>不过dict的查找速度快不是没有代价的，dict的缺点是占用内存大，还会浪费很多内容，list正好相反，占用内存小，但是查找速度慢。</p> <p><strong>2. key不可变</strong></p> <p>对于基础数据类型，字符串、数字等，这些都是不可变的，可以作为dict的key，而对于复杂数据类型，经过前面的学习，我们知道tuple是不可变的，list是可变的，因此tuple可以作为dict的key，但是list不可以作为dict的key，否则将会报错。</p> <p><strong>3. Python遍历dict</strong></p> <p>通过直接print(d)，我们打印出来的是完整的一个dict；有时候，我们需要把dict中m一定条件的元素打印出来，比如成绩超过60的，在这种情况下，我们需要则需要遍历dict（这种时候需要使用for循环），并通过条件判断把满足条件的打印出来。</p> <p>遍历dict有两种方法</p> <p>第一种是遍历dict的所有key，并通过key获得对应的value。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>d = {
+    'Alice': 45,
+    'Bob': 60,
+    'Candy': 75,
+    'David': 86,
+    'Ellena': 49
+}
+for key in d: # 遍历d的key
+    value = d[key]
+    if value &gt; 60:
+        print(key, value)
+# ==&gt; Candy 75
+# ==&gt; David 86
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>第二种方法是通过dict提供的items()方法，items()方法会返回dict中所有的元素，每个元素包含key和value。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>for key, value in d.items():
+    if value &gt; 60:
+        print(key, value)
+# ==&gt; Candy 75
+# ==&gt; David 86
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>5. 获取dict的所有key</strong></p> <p>dict提供keys()函数，可以返回dict中所有的key。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>d = {'Alice': [50, 61, 66], 'Bob': [80, 61, 66], 'Candy': [88, 75, 90]}
+for key in d.keys():
+    print(key)
+# ==&gt; Alice
+# ==&gt; Bob
+# ==&gt; Candy
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong>6. 获取dict所有的value</strong></p> <p>dict提供values()函数，可以返回dict中所有的value。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>d = {'Alice': [50, 61, 66], 'Bob': [80, 61, 66], 'Candy': [88, 75, 90]}
+for key in d.values():
+    print(key)
+# ==&gt; [50, 61, 66]
+# ==&gt; [80, 61, 66]
+# ==&gt; [88, 75, 90]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong>7. 清除所有元素</strong></p> <p>dict提供clear()函数，可以直接清除dict中所有的元素。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>d = {'Alice': [50, 61, 66], 'Bob': [80, 61, 66], 'Candy': [88, 75, 90]}
+print(d) # ==&gt; {'Alice': [50, 61, 66], 'Bob': [80, 61, 66], 'Candy': [88, 75, 90]}
+d.clear()
+print(d) # ==&gt; {}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="十、python的set容器"><a href="#十、python的set容器" class="header-anchor">#</a> 十、Python的Set容器</h2> <p>set和list类似，拥有一系列元素，但是set和list不一样，set里面的元素是不允许重复的，而list里面可以包含相同的元素；set与list的另一个区别是，set里面的元素是没有顺序的。</p> <p>创建set的方式是使用set()，并传入一个list，list的元素将会被转换成set的元素。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>s = set([1, 4, 3, 2, 5])
+print(s) # ==&gt; set([1, 2, 3, 4, 5])
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>需要注意的是，上述打印的形式类似 list， 但它不是 list，仔细看还可以发现，打印的顺序和原始 list 的顺序有可能是不同的，因为set内部存储的元素是无序的。
+另外，set不能包含重复的元素</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>s = set([1, 4, 3, 2, 5, 4, 2, 3, 1])
+print(s) # ==&gt; set([1, 2, 3, 4, 5])
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>可以看到，在传入set()的list中，包含了重复的元素，但是打印的时候，相同的元素只保留了一个，重复的元素都被去掉了，这是set的一个重要特点。</p> <p><strong>1. set提供了add()方法，我们可以使用add()方法，往set里面添加元素。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>names = ['Alice', 'Bob', 'Candy', 'David', 'Ellena']
+name_set = set(names)
+name_set.add('Gina')
+print(name_set) # ==&gt; set(['Gina', 'Alice', 'Candy', 'David', 'Ellena', 'Bob'])
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>2. set提供了update()方法，可以一次性给set添加多个元素。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>names = ['Alice', 'Bob', 'Candy', 'David', 'Ellena']
+new_names = ['Hally', 'Isen', 'Jenny', 'Karl']
+name_set = set(names)
+name_set.update(new_names) # ==&gt; set(['Jenny', 'Ellena', 'Alice', 'Candy', 'David', 'Hally', 'Bob', 'Isen', 'Karl'])
+print(name_set)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>3. set提供了remove()方法允许我们删除set中的元素。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>name_set = set(['Jenny', 'Ellena', 'Alice', 'Candy', 'David', 'Hally', 'Bob', 'Isen', 'Karl'])
+name_set.remove('Jenny')
+print(name_set) # ==&gt; set(['Ellena', 'Alice', 'Candy', 'David', 'Hally', 'Bob', 'Isen', 'Karl'])
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>需要注意的是，如果remove的元素不在set里面的话，那么将会引发错误。</p> <p><strong>4. 使用discard()方法删除元素</strong>，</p> <p>和remove()不同的是，当元素不存在时，使用discard()并不会引发错误，所以使用discard()是更加高效的一个方法。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>name_set = set(['Jenny', 'Ellena', 'Alice', 'Candy', 'David', 'Hally', 'Bob', 'Isen', 'Karl'])
+name_set.discard('Jenny')
+print(name_set) # ==&gt; set(['Ellena', 'Alice', 'Candy', 'David', 'Hally', 'Bob', 'Isen', 'Karl'])
+name_set.discard('Jenny')
+print(name_set) # ==&gt; set(['Ellena', 'Alice', 'Candy', 'David', 'Hally', 'Bob', 'Isen', 'Karl']
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>5. 清除所有元素的方法clear()。</strong></p> <p>和dict一样，set也提供了clear()方法，可以快速清除set中的所有元素。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>name_set = set(['Jenny', 'Ellena', 'Alice', 'Candy', 'David', 'Hally', 'Bob', 'Isen', 'Karl'])
+name_set.discard('Jenny')
+print(name_set) # ==&gt; set(['Ellena', 'Alice', 'Candy', 'David', 'Hally', 'Bob', 'Isen', 'Karl'])
+name_set.discard('Jenny')
+print(name_set) # ==&gt; set(['Ellena', 'Alice', 'Candy', 'David', 'Hally', 'Bob', 'Isen', 'Karl']
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>6. 集合的子集和超集</strong></p> <p>set提供方法判断两个set之间的关系，比如两个集合set，判断其中一个set是否为另外一个set的子集或者超集。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>s1 = set([1, 2, 3, 4, 5])
+s2 = set([1, 2, 3, 4, 5, 6, 7, 8, 9])
+# 判断s1是否为s2的子集
+s1.issubset(s2) # ==&gt; True
+# 判断s2是否为s1的超集
+s2.issuperset(s1) # ==&gt; True
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong>7. 判断集合是否重合</strong></p> <p>有时候需要判断两个集合是否有重合的地方，如果使用传统的方法，需要使用for循环一个一个的去判断，非常麻烦，set提供isdisjoint()方法，可以快速判断两个集合是否有重合，如果有重合，返回False，否则返回True。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>s1 = set([1, 2, 3, 4, 5])
+s2 = set([1, 2, 3, 4, 5, 6, 7, 8, 9])
+s1.isdisjoint(s2) # ==&gt; False，因为有重复元素1、2、3、4、5
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/boke/views/Python/python.html#介绍" class="sidebar-link reco-side-介绍" data-v-70334359>介绍</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Python/python.html#一、python基础数据类型" class="sidebar-link reco-side-一、python基础数据类型" data-v-70334359>一、Python基础数据类型</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_1-1-整数" class="sidebar-link reco-side-_1-1-整数" data-v-70334359>1.1 整数</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_1-2-浮点数" class="sidebar-link reco-side-_1-2-浮点数" data-v-70334359>1.2 浮点数</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_1-3-字符串" class="sidebar-link reco-side-_1-3-字符串" data-v-70334359>1.3 字符串</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_1-4-布尔值" class="sidebar-link reco-side-_1-4-布尔值" data-v-70334359>1.4 布尔值</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_1-5-空值" class="sidebar-link reco-side-_1-5-空值" data-v-70334359>1.5 空值</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Python/python.html#二、python定义变量的方法" class="sidebar-link reco-side-二、python定义变量的方法" data-v-70334359>二、Python定义变量的方法</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_2-1-什么是变量" class="sidebar-link reco-side-_2-1-什么是变量" data-v-70334359>2.1 什么是变量</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_2-1-合法的变量名" class="sidebar-link reco-side-_2-1-合法的变量名" data-v-70334359>2.1 合法的变量名</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_2-1-定义变量" class="sidebar-link reco-side-_2-1-定义变量" data-v-70334359>2.1 定义变量</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Python/python.html#三、python的整数与浮点数" class="sidebar-link reco-side-三、python的整数与浮点数" data-v-70334359>三、Python的整数与浮点数</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_3-1-四则运算" class="sidebar-link reco-side-_3-1-四则运算" data-v-70334359>3.1 四则运算</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_3-2-取模运算" class="sidebar-link reco-side-_3-2-取模运算" data-v-70334359>3.2 取模运算</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_3-3-地板除" class="sidebar-link reco-side-_3-3-地板除" data-v-70334359>3.3 地板除</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_3-4-小数点位数" class="sidebar-link reco-side-_3-4-小数点位数" data-v-70334359>3.4 小数点位数</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Python/python.html#四、python的布尔类型" class="sidebar-link reco-side-四、python的布尔类型" data-v-70334359>四、Python的布尔类型</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_4-1-与运算" class="sidebar-link reco-side-_4-1-与运算" data-v-70334359>4.1 与运算</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_4-2-或运算" class="sidebar-link reco-side-_4-2-或运算" data-v-70334359>4.2 或运算</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_4-3-非运算" class="sidebar-link reco-side-_4-3-非运算" data-v-70334359>4.3 非运算</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_4-4-短路计算" class="sidebar-link reco-side-_4-4-短路计算" data-v-70334359>4.4 短路计算</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Python/python.html#五、python的字符串" class="sidebar-link reco-side-五、python的字符串" data-v-70334359>五、Python的字符串</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_5-1-raw字符串与多行字符串" class="sidebar-link reco-side-_5-1-raw字符串与多行字符串" data-v-70334359>5.1 raw字符串与多行字符串</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_5-2-字符串format" class="sidebar-link reco-side-_5-2-字符串format" data-v-70334359>5.2 字符串format</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_5-3-字符串编码" class="sidebar-link reco-side-_5-3-字符串编码" data-v-70334359>5.3 字符串编码</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_5-4-字符串切片" class="sidebar-link reco-side-_5-4-字符串切片" data-v-70334359>5.4 字符串切片</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Python/python.html#六、python的控制流程" class="sidebar-link reco-side-六、python的控制流程" data-v-70334359>六、Python的控制流程</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_6-1-if-else-语句" class="sidebar-link reco-side-_6-1-if-else-语句" data-v-70334359>6.1 if else 语句</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_6-2-for循环" class="sidebar-link reco-side-_6-2-for循环" data-v-70334359>6.2 for循环</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_6-3-while循环" class="sidebar-link reco-side-_6-3-while循环" data-v-70334359>6.3 while循环</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Python/python.html#七、-python的list容器" class="sidebar-link reco-side-七、-python的list容器" data-v-70334359>七、 Python的List容器</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_7-1-向list添加新的元素" class="sidebar-link reco-side-_7-1-向list添加新的元素" data-v-70334359>7.1 向list添加新的元素</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_7-2-从list删除元素" class="sidebar-link reco-side-_7-2-从list删除元素" data-v-70334359>7.2 从list删除元素</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Python/python.html#八、python的tuple容器" class="sidebar-link reco-side-八、python的tuple容器" data-v-70334359>八、Python的tuple容器</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_8-1-count-方法" class="sidebar-link reco-side-_8-1-count-方法" data-v-70334359>8.1 count()方法</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_8-2-index-方法" class="sidebar-link reco-side-_8-2-index-方法" data-v-70334359>8.2 index()方法</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_8-3-创建单个元素的tuple" class="sidebar-link reco-side-_8-3-创建单个元素的tuple" data-v-70334359>8.3 创建单个元素的tuple</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Python/python.html#九、-python的dict容器" class="sidebar-link reco-side-九、-python的dict容器" data-v-70334359>九、 Python的Dict容器</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_9-1-读取dict元素" class="sidebar-link reco-side-_9-1-读取dict元素" data-v-70334359>9.1 读取dict元素</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_9-2-添加dict元素" class="sidebar-link reco-side-_9-2-添加dict元素" data-v-70334359>9.2 添加dict元素</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_9-3-删除dict元素" class="sidebar-link reco-side-_9-3-删除dict元素" data-v-70334359>9.3 删除dict元素</a></li><li class="level-3" data-v-70334359><a href="/boke/views/Python/python.html#_9-4-dict的特点与方法" class="sidebar-link reco-side-_9-4-dict的特点与方法" data-v-70334359>9.4 dict的特点与方法</a></li><li class="level-2" data-v-70334359><a href="/boke/views/Python/python.html#十、python的set容器" class="sidebar-link reco-side-十、python的set容器" data-v-70334359>十、Python的Set容器</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="reco-bgm-panel" data-v-39f9e6e0><audio id="bgm" src="/boke/mp3/1.mp3" data-v-39f9e6e0></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><img src="/boke/images/avatar.png" data-v-39f9e6e0></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><div class="reco-bgm-cover" style="background-image:url(/boke/images/avatar.png);" data-v-39f9e6e0><div class="mini-operation" style="display:none;" data-v-39f9e6e0><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-39f9e6e0></i></div> <div class="falut-message" style="display:none;" data-v-39f9e6e0>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><div class="info-box" data-v-39f9e6e0><i class="reco-bgm reco-bgm-music music" data-v-39f9e6e0></i>哪里都是你</div> <div class="info-box" data-v-39f9e6e0><i class="reco-bgm reco-bgm-artist" data-v-39f9e6e0></i>队长</div> <div class="reco-bgm-progress" data-v-39f9e6e0><div class="progress-bar" data-v-39f9e6e0><div class="bar" data-v-39f9e6e0></div></div></div> <div class="reco-bgm-operation" data-v-39f9e6e0><i class="reco-bgm reco-bgm-last last" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-play play" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-next next" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-39f9e6e0></i> <div class="volume-bar" data-v-39f9e6e0><div class="bar" data-v-39f9e6e0></div></div></div></div> <div class="reco-bgm-left-box" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><i class="reco-bgm reco-bgm-left" data-v-39f9e6e0></i></div></div></div></div></div>
+    <script src="/boke/assets/js/app.5fe2e981.js" defer></script><script src="/boke/assets/js/3.36b99c6d.js" defer></script><script src="/boke/assets/js/1.513908fb.js" defer></script><script src="/boke/assets/js/21.4eda73f8.js" defer></script>
+  </body>
+</html>
